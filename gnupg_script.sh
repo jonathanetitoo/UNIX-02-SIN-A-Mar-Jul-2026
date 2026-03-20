@@ -1,3 +1,4 @@
 uname -a #daba información de la computadora u ordenador
 which gpg #muestra la ubicación del binario de gpg
 gpg --version #muestra la versión de gpg e información adicional
+gpg --full-generate-key #genero la llave publica y privada
