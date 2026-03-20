@@ -1,3 +1,3 @@
 import suma
 
-print(suma.sumar(6,9))
+print(suma.suma(6,9))
