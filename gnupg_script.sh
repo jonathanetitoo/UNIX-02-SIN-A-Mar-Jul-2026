@@ -4,3 +4,4 @@ gpg --version #me da la version e informacion adicional
 gpg --full-generate-key #genero la llave publica y privada
 gpg --armor --export #exportaba la llave publica a un archivo 
 gpg --list-secret-keys --keyid-format=long #helps to get the private key
+gpg --armor --export-secret-keys #Helps to export the private key
