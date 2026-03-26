@@ -8,3 +8,4 @@ gpg --list-secret-keys --keyid-format=long #Para listar y ver las llaves privada
 gpg --armor --export-secret-keys XXXXXXXX #Exporta la clave privada y la convierte en texto para copia
 gpg --armor --export camiloscas.30.lascano@gmail.com > mi_llave_publica.asc #Exportar llave pública 
 gpg --import Ashley.asc #Importar llave pública de Ash de archivo Ashley.asc 
+echo "te quiero gei">doc_no_cifrado.txt #se genera un archivo con el mensaje 
