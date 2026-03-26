@@ -14,3 +14,4 @@ gpg --output doc_cifrado.txt --encrypt --recipient jolagunapu@uide.edu.ec doc_no
 gpg --decrypt joss_cifrado.txt # descrifra el mensaje enviado por joss
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #create a signature with the content in a single plain text file 
 cat doc_no_cifrado_firmado.txt #Verification of the correct creation of the signature
+gpg --verify MICOMPA_doc_no_cifrado_firmado.txt #Check your partner's signature
