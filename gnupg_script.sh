@@ -14,4 +14,4 @@ gpg --full-generate-key # con esto genero la llave publica y privada
  gpg --verify doc_cifrado1.txt.asc # Este comado ferifica que si se halla confirmado la firma
  gpg --edit-key davidsvaca07@gmail.com # abre el menu de edicion interactivo
  gpg --sign-key davidsvaca07@gmail.com # pone mi firma en la llave de mi compa
- 
+ gpg --encrypt --sign --recipient davidsvaca07@gmail.com doc_cifrado1.txt # Bloquea para que solo mi compa pueda verlo y pone mi firma digital que sea visible
