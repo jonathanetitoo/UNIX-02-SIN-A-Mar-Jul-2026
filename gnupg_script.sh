@@ -1,27 +1,26 @@
-uname -a #Da informacion del ordenador 
-which gpg #ubicación del binario del gpg 
-gpg --version #muestra la version e info de gpg
-gpg --full-key-generate #genero llave publica y privada
-gpg --list-keys # lista las llaves
-gpg --armor --export #Exporta las llaves
-gpg --list-secret-keys --keyid-format=long # para listar las llaves privadas
-gpg --armor --export-secret-keys xxxxxx # exporta la clave privada
-gpg --armor --export paulitagaby12@gmail.com >> mi_llave_publica.asc #Para exportar mi llave publica 
-gpg --import Ariel.asc #Para importar la llave publica de mi compañero desde el archivo
-echo "Chupiseñal" > doc_no_cifrado.text # Para crear el archivo e i8mporta el texto 
-gpg --output doc_cifrado.text --encrypt --recipient buitronariel23@gmail.com doc_no_cifrado.text #Cifra el contenido de nuestro archivo
-gpg --decrypt doc_Arielcifrado.txt #Se utiliza para desencriptar el mensaje de mi compañero
-gpg --output doc_no_cifrado_firmado.text --clearsign doc_no_cifrado.text # Se crea un documento formado 
-cat doc_no_cifrado_firmado.txt # Se verifica que el docuemnto se encuentre 
-gpg --verify doc_no_cifrado_firmado.txt #Se utiliza para verificar que el documento este firmado 
-gpg --output doc_no_cifrado_firmado_binario.text --sign doc_cifrado.text #Este comando sirve para firmar el documento en formato binario
-gpg --verify doc_no_cifrado_firmado_binario.txt # Este comando sirve para verificar que el texto este correctamente firmado en formato binario
-gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.text #Este comando sirve firmar el documento y vamos a separar la firma del
-documento
-gpg --verify firma_separada_doc_no_cifradoAriel.sig doc_no_cifrado.txt # Sirve para verificar la firma separa de mi compañero
-gpg --edit-key buitronariel23@gmail.com #Este comando se utiliza para dar el voto de confianza
-gpg --sign-key 3AFF0D971913C2E2 # Este comando se utiliza para firmar y certificar la confianza 
-gpg --verify doc_no_cifrado_firmado.txt #Este comando sirve para verificar el documento firmado de mi compañero.
-gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient buitronariel23@gmail.com doc_no_cifrado.text #Este comando sirve para firmar y cifrar el documento
-gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt doc_cifrado_y_firmadoAriel.txt # Este comando se utiliza para validar la firma y descifrar
-cat doc_cifrado_y_firmado_descifrado_y_validado.txt # Este comando lo utilizamos para comprobar el contenido del archivo.
+uname -a #It provides information about the computer.
+which gpg #location of the gpg binary 
+gpg --version #Displays the version and information of GPG
+gpg --full-key-generate #I generate public and private keys
+gpg --list-keys # list the keys
+gpg --armor --export #Export the keys
+gpg --list-secret-keys --keyid-format=long # to list the private keys
+gpg --armor --export-secret-keys xxxxxx # export the private key
+gpg --armor --export paulitagaby12@gmail.com >> mi_llave_publica.asc #To export my public key 
+gpg --import Ariel.asc #To import my colleague's public key from the file
+echo "Chupiseñal" > doc_no_cifrado.text # To create the file and import the text
+gpg --output doc_cifrado.text --encrypt --recipient buitronariel23@gmail.com doc_no_cifrado.text #Encrypt the contents of our file
+gpg --decrypt doc_Arielcifrado.txt #It is used to decrypt my colleague's message.
+gpg --output doc_no_cifrado_firmado.text --clearsign doc_no_cifrado.text # A document is created
+cat doc_no_cifrado_firmado.txt # It is verified that the document is located
+gpg --verify doc_no_cifrado_firmado.txt #It is used to verify that the document is signed. 
+gpg --output doc_no_cifrado_firmado_binario.text --sign doc_cifrado.text #This command is used to sign the document in binary format.
+gpg --verify doc_no_cifrado_firmado_binario.txt # This command is used to verify that the text is correctly signed in binary format
+gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.text #This command is used to sign the document, and we're going to separate the signature from the document.
+gpg --verify firma_separada_doc_no_cifradoAriel.sig doc_no_cifrado.txt # It serves to verify my colleague's separate signature.
+gpg --edit-key buitronariel23@gmail.com #This command is used to give a vote of confidence
+gpg --sign-key 3AFF0D971913C2E2 # This command is used to sign and certify trust
+gpg --verify doc_no_cifrado_firmado.txt #This command is used to verify my colleague's signed document.
+gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient buitronariel23@gmail.com doc_no_cifrado.text #This command is used to sign and encrypt the document
+gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt doc_cifrado_y_firmadoAriel.txt # This command is used to validate the signature and decrypt.
+cat doc_cifrado_y_firmado_descifrado_y_validado.txt # We use this command to check the contents of the file.
