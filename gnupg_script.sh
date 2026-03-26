@@ -10,3 +10,4 @@ gpg --armor --export paulitagaby12@gmail.com >> mi_llave_publica.asc #Para expor
 gpg --import Ariel.asc #Para importar la llave publica de mi compañero desde el archivo
 echo "Chupiseñal" > doc_no_cifrado.text # Para crear el archivo e i8mporta el texto 
 gpg --output doc_cifrado.text --encrypt --recipient buitronariel23@gmail.com doc_no_cifrado.text #Cifra el contenido de nuestro archivo
+gpg --decrypt doc_Arielcifrado.txt #Se utiliza para desencriptar el mensaje de mi compañero
