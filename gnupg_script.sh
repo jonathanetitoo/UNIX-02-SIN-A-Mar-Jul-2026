@@ -6,3 +6,4 @@ gpg --list-keys #exportar el llavero
 gpg --armor --export #exportar la llave pública
 gpg --list-secret-keys --keyid-format=long  #lista las llaves privadas
 gpg --armor --export-secret-keys XXXXXXXX #exporta la llave privada en formato de texto ASCII (las X representan el hash)
+gpg --armor --export jolagunapu@uide.edu.ec > mi_llave_publica.asc   #se exporta la llave pública con el correo registrado
