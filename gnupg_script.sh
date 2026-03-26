@@ -16,3 +16,5 @@ cat doc_no_cifrado_firmado.txt # Se verifica que el docuemnto se encuentre
 gpg --verify doc_no_cifrado_firmado.txt #Se utiliza para verificar que el documento este firmado 
 gpg --output doc_no_cifrado_firmado_binario.text --sign doc_cifrado.text #Este comando sirve para firmar el documento en formato binario
 gpg --verify doc_no_cifrado_firmado_binario.txt # Este comando sirve para verificar que el texto este correctamente firmado en formato binario
+gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.text #Este comando sirve firmar el documento y vamos a separar la firma del
+documento
