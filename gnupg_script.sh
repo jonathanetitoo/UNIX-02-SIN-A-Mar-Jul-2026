@@ -23,4 +23,5 @@ gpg --decrypt paula_doc_cifrado.text.txt #descargamos el archivo cifrado de nues
 # === Bloque D — Firma de documentos ===
 
 # 1. Firma en texto claro
-gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt
+gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #Add clearsign signature to document
+cat doc_no_cifrado_firmado.txt # verification of the created document
