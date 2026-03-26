@@ -18,3 +18,4 @@ gpg --edit-key pametoapanta.502@gmail.com #This command allows you to enter the 
 gpg --sign-key pametoapanta.502@gmail.com #This command digitally signs my colleague's key with mine to publicly validate its authenticity and strengthen trust in the Web of Trust system.
 gpg --verify MICOMPA_doc_no_cifrado_firmado.txt #This command checks the document to ensure that my colleague's signature is valid and that the file has not been modified by anyone else.
 gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt # This command compresses and signs the document in a binary format, which protects the integrity of the file but prevents reading its contents directly without using GPG.
+gpg --verify MICOMPA_doc_no_cifrado_firmado_binario.txt #This command analyzes the packaged file to confirm that my colleague's digital signature is valid and that the binary data has not been altered.
