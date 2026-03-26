@@ -6,3 +6,4 @@ gpg --list-keys
 gpg --armor --export dave87821@gmail.com> mi_llave_publica.asc 
 gpg --list-secret-keys --keyid-format=long
 gpg --armor --export-secret-keys 5B89AD80508878A9
+ echo "Amar es compartir">doc_no_cifrado.txt
