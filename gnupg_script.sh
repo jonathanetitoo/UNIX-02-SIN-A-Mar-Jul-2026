@@ -34,5 +34,5 @@ cat doc_no_cifrado_firmado.txt #muestra en la pantalla todo el contenido del arc
 # $ usuario general
 
 gpg --verify PAULA_doc_no_cifrado_firmado.txt #Comprueba que el contenido del archivo no ha sido alterado y que la firma es auténtica.
-
+gpg --edit-key XXXXX #Modifica, gestiona o examinar los detalles de una clave GPG específica.
 
