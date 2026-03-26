@@ -10,3 +10,4 @@ gpg --armor --export davidsvaca07@gmail.com > mi_llave_publica.asc # exporta la 
 gpg --import llavepublica.asc llave-publica.asc # importa la llave de mi compa 
 $ echo "rubias o morenas"> doc_no_cifrado.txt # creamos un archivo con mensaje 
 gpg --output doc_cifrado.txt --encrypt --recipient adriangarciasnchez@gmail.com doc_no_cifrado.txt # toma el archivo y lo cifra usando la llave publica del destinatario
+$ gpg --decrypt cifradoadrian.txt # decifra el mensaje de mi amigo
