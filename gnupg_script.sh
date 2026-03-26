@@ -10,4 +10,4 @@ gpg --list-keys #para mostrar llaves existentes
 gpg --list-secret-keys --keyid-format-long #exportar la llave privada
 gpg --armor --export-secret-keys XXXXXXX #exporta una llave privada específica reemplazando las X por un sec específico, no es necesario las XXX si solo se tiene 1 par de llaves
 gpg --armor --export correo1@gmail.com #exsportar
-gpg --import NOMBRELEGIDO mi_llave_públic.asc #lo ultimo depende del nombre, es importar la llave de alguien mas, es necesario que esté importado el archivo de la llave primero
+gpg --import NOMBRELEGIDO_mi_llave_públic.asc #lo ultimo depende del nombre, es importar la llave de alguien mas, es necesario que esté importado el archivo de la llave primero
