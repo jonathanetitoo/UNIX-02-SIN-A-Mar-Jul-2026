@@ -2,10 +2,12 @@ uname -a #daba información del ordenador
 which gpg #ubicación del binario de gpg
 gpg --version #me da la versión e información adicional
 gpg --full-generate-key #genero llave pública y privada
-gpg --armor --export #exportar llave pública, armor expresa el documento de forma legible
+gpg --armor --export #exportar llave pública, armor expresa el binario forma legible
 RSA #retrocompatiblidad 
 4096 bits #suficientemente grande para seguridad pero suficientemnte pequeño para que computadoras puedan comprobar la contraseña
 gpg --list-secret-keys --keyid-format=long #Listar llaves privadas
 pull #proponer cambios
 push #envío los cambios
 gpg --armor --export-secret-keys XXXXXXXX #especificar el hash de llaves correspondientes
+gpg --armor --export-secret-keys #exportar privada
+gpg --armor --export slucina0406@gmail.com >mi_llave_pública.asc #exporto mi llave publica y la guardo en un archivo
