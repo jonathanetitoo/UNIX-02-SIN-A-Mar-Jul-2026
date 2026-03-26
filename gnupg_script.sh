@@ -35,3 +35,4 @@ gpg --sign-key XXXXXXX #We signed the key to certify our trust
 gpg --verify pau_doc_no_cifrado_firmado.text.txt #We check again and see that the trust warning disappears
 gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient paulitagaby12@gmail.com doc_no_cifrado.txt #We encrypt and sign the document in one step
 gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt pau_doc_cifrado_y_firmado.txt #Decrypt and verify final document
+cat doc_cifrado_y_firmado_descifrado_y_validado.txt #Check the contents of the resulting file
