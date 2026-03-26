@@ -24,3 +24,4 @@ gpg --sign-key 3AFF0D971913C2E2 # Este comando se utiliza para firmar y certific
 gpg --verify doc_no_cifrado_firmado.txt #Este comando sirve para verificar el documento firmado de mi compañero.
 gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient buitronariel23@gmail.com doc_no_cifrado.text #Este comando sirve para firmar y cifrar el documento
 gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt doc_cifrado_y_firmadoAriel.txt # Este comando se utiliza para validar la firma y descifrar
+cat doc_cifrado_y_firmado_descifrado_y_validado.txt # Este comando lo utilizamos para comprobar el contenido del archivo.
