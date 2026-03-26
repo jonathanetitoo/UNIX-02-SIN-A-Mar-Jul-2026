@@ -18,3 +18,4 @@ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #esto cre
 cat doc_no_cifrado_firmado.txt #con este comando se comprueba la generación correcta de la firma
 gpg --verify SantiLucina_doc_no_cifrado_firmado.txt #este comando se usa para verificar la firma de mi compañero
 gpg --edit-key XXXX #este comando sirve para dar un voto de confianza a la persona dueña de la llave, las x pueden ser reemplazadas con la llave RSA o con el correo electrónico registrado
+gpg --sign-key XXXXX #con este comando firmamos la clave para ratificar nuestra decisión
