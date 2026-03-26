@@ -5,3 +5,4 @@ gpg --full-generate-key #genero una llave pública y privada
 gpg --list-keys
 gpg --armor --export dave87821@gmail.com> mi_llave_publica.asc 
 gpg --list-secret-keys --keyid-format=long
+gpg --armor --export-secret-keys 5B89AD80508878A9
