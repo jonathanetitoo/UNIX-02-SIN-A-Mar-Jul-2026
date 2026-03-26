@@ -7,3 +7,4 @@ gpg -armor --export #Para exportar las llaves
 gpg --list-secret-keys --keyid-format=long #Para listar y ver las llaves privadas 
 gpg --armor --export-secret-keys HASH #Exporta tu clave priva y la convierte en texto para copiar
 gpg --armor --export<ashley2007egmail.com> mi_llave_publica.asc #Exporta tu clave publica 
+gpg --import CAMILLA.asc #Exportar una clave desde un archivo 
