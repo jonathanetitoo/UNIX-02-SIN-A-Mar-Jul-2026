@@ -13,3 +13,4 @@ gpg --output doc_cifrado.txt --encrypt --recipient pamelatoapanta.502Q@gmail.com
 gpg --decrypt MICOMPA_doc_cifrado.txt #descifra el archivo protegido enviado por mi compañera, solicitando mi contraseña privada para revelar el mensaje original en la pantalla.
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #This command generates a new file (doc_no_cifrado_firmado.txt) that contains the original text of the document in a readable format along with a digital signature (clearsign).
 cat doc_no_cifrado_firmado.txt #It displays the complete contents of the file in the terminal, allowing you to see both the original text and the digital signature block.
+gpg --verify MICOMPA_doc_no_cifrado_firmado.txt #This command validates the digital signature of the file to confirm the identity of the sender.
