@@ -18,3 +18,5 @@ gpg --output doc_no_cifrado_firmado_binario.text --sign doc_cifrado.text #Este c
 gpg --verify doc_no_cifrado_firmado_binario.txt # Este comando sirve para verificar que el texto este correctamente firmado en formato binario
 gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.text #Este comando sirve firmar el documento y vamos a separar la firma del
 documento
+gpg --verify firma_separada_doc_no_cifradoAriel.sig doc_no_cifrado.txt # Sirve para verificar la firma separa de mi compañero
+gpg --edit-key buitronariel23@gmail.com #Este comando se utiliza para dar el voto de confianza
