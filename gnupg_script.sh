@@ -15,3 +15,4 @@ gpg --decrypt joss_cifrado.txt # descrifra el mensaje enviado por joss
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #create a signature with the content in a single plain text file 
 cat doc_no_cifrado_firmado.txt #Verification of the correct creation of the signature
 gpg --verify MICOMPA_doc_no_cifrado_firmado.txt #Check your partner's signature
+gpg --edit-key jolagunapu@uide.edu.ec #Assign a trust level to your partner's key using Web of Trust; assign the trust level (recommended: 4) and use “q” to finish 
