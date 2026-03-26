@@ -20,3 +20,4 @@ gpg --sign-key jolagunapu@uide.edu.ec #We signed the document to confirm our dec
 gpg --verify MICOMPA_doc_no_cifrado_firmado.txt #Verify the digital signature of the signed document your colleague sent. GPG already recognizes your colleague's key as trusted, so the verification comes back clean, with no warnings.
 gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #Sign the document in binary format using the signature in the file
 gpg --verify JOSS_doc_no_cifrado_firmado_binario.txt #Verify partner's binary signed document
+gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #Sign document with detached signature in separate file
