@@ -10,3 +10,4 @@ gpg --armor --export jolagunapu@uide.edu.ec > mi_llave_publica.asc   #se exporta
 gpg --import Pame.asc #importamos la llave pública que nos han compartido
 echo "Hola Pame, este mensaje es top secret" > doc_no_cifrado.txt #crea un archivo de texto llamado doc_no_cifrado.txt que contiene el mensaje "Hola Pame, este mensaje es top secret"
 gpg --output doc_cifrado.txt --encrypt --recipient pamelatoapanta.502Q@gmail.com doc_no_cifrado.txt #cifra el archivo doc_no_cifrado.txt utilizando la llave pública de mi compañera para que solo ella pueda leer su contenido.
+gpg --decrypt MICOMPA_doc_cifrado.txt #descifra el archivo protegido enviado por mi compañera, solicitando mi contraseña privada para revelar el mensaje original en la pantalla.
