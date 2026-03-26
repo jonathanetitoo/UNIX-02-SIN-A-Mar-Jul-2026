@@ -6,3 +6,6 @@ gpg --armor --export #exportar llave pública, armor expresa el documento de for
 RSA #retrocompatiblidad 
 4096 bits #suficientemente grande para seguridad pero suficientemnte pequeño para que computadoras puedan comprobar la contraseña
 gpg --list-secret-keys --keyid-format=long #Listar llaves privadas
+pull #proponer cambios
+push #envío los cambios
+gpg --armor --export-secret-keys XXXXXXXX #especificar el hash de llaves correspondientes
