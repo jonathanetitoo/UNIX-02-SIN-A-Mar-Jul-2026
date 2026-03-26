@@ -17,3 +17,4 @@ cat doc_no_cifrado_firmado.txt #Verification of the correct creation of the sign
 gpg --verify MICOMPA_doc_no_cifrado_firmado.txt #Check your partner's signature
 gpg --edit-key jolagunapu@uide.edu.ec #Assign a trust level to your partner's key using Web of Trust; assign the trust level (recommended: 4) and use “q” to finish 
 gpg --sign-key jolagunapu@uide.edu.ec #We signed the document to confirm our decision
+gpg --verify MICOMPA_doc_no_cifrado_firmado.txt #Verify the digital signature of the signed document your colleague sent. GPG already recognizes your colleague's key as trusted, so the verification comes back clean, with no warnings.
