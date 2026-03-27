@@ -38,3 +38,4 @@ gpg --edit-key XXXXX #Modifica, gestiona o examinar los detalles de una clave GP
 gpg --sign -key XXXXXX #Valida oficialmente la identidad del dueño de una clave pública al estampar tu propia firma digital sobre ella.
 gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #Genera un archivo binario comprimido que contiene el mensaje original y su firma digital, haciendo que el contenido no sea legible sin usar GPG.
 gpg --verify PAULA_doc_no_cifrado_firmado_binario.txt #Comprueba la integridad y autoría del archivo binario para confirmar que el contenido no fue alterado y que la firma es auténtica.
+gpg --output firma_separada_doc_no_cifrado-sig --detach-sign doc_no_cifrado.txt #Crea un archivo de firma digital independiente que contiene solo la firma de doc_no_cifrado.txt, dejando el mensaje original sin cambios y por separado.
