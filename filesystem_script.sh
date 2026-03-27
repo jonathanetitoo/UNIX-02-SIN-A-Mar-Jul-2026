@@ -4,3 +4,7 @@ cd /dev
 ls
 #Show the history of the used commands 
 history
+# change directory to /proc directory
+cd /proc
+# Displays file content on screen
+cat cpuinfo
