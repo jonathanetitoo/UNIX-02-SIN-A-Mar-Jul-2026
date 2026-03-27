@@ -8,3 +8,4 @@ gpg --list-secret-keys --keyid-format=long #This command is used to list the sec
 gpg --armor --export-secret-keys A472F6F558168284 #Export the secret key
 gpg --import mi_llave_pub.asc #The public key matters
 $ echo "te amo cesar"> doc_no_cifrado.txt cesar.arciniegas.mejia4@gmail.com doc_no_cifrado.txt #Create the text file
+$ gpg --output doc_cifrado.txt --encrypt --recipient cesar.arciniegas.mejia4@gmail.com doc_no_cifrado.txt #Encrypt the document
