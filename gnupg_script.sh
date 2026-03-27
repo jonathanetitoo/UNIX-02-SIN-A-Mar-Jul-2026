@@ -21,3 +21,5 @@ gpg --edit-key luisvillarrealp125@gmail.com #We assign the trust level to anothe
 gpg --sign-key luisvillarrealp125@gmail.com #We sign our friend's public key
 gpg --verify msj_my_friend.txt.asc #Check that the signed file has not been modified
 gpg --verify msj_my_friend.txt.sig msj_my_friend.txt #When the signature is in a separate file
+gpg --output doc_final.gpg --encrypt --sign --recipient luisvillarrealp125@gmail.com msj_my_friend.txt 
+#Create and encrypt the file with the signature only for the recipient
