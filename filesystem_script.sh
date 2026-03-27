@@ -14,3 +14,6 @@ home/ #directorios personales de usuario
 var # datos raibales como los logs y los de BDD
 gcc saludo.c -o saludobin #Creo un archivo nuevo en binario con el contenido de saludo.c 
 sudo mv saludobin /bin/ # Mueve el contenido de saludobin al archivo /bin/
+inodo #identificado unico
+#El nombre del archivo no se guarda en el inodo sino en el directorio que lo contiene 
+pwd #((Print Working Directory) en Linux muestra la ruta absoluta del directorio actual en la terminal
