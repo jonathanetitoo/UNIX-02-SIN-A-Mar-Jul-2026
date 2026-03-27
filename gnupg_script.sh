@@ -8,3 +8,4 @@ gpg --armor --export cesar.arciniegas.mejia4@gmail.com> my_key_publicaa.asc #Exp
 #"--armor converts binary to text-readable text"
 gpg --list-secret-keys --keyid-format=long #Allows listing the private GPG key
 gpg --armor --export-secret-keys 01EE56537872D793 #Export the secret key by specifying the hash of the corresponding keys.
+gpg --import mi_llave_publica.asc #This command allows importing my partner's pub key
