@@ -24,4 +24,5 @@ gpg --verify MICOMPA_doc_no_cifrado_firmado_binario.txt #I verify that my collea
 gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #Or I become a notary who issues an independent certificate. Unlike previous methods where I wrapped the message or appended the signature, here I do something very elegant: I leave your original file exactly as it is and create a second file containing only the signature.
 gpg --verify MICOMPA_firma_separada_doc_no_cifrado.sig MICOMPA_cifrado_doc.txt #verify the authenticity and integrity of a file
 gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient XXXXXXX doc_no_cifrado.txt #That command performs two fundamental security operations in one step: digital signature (to prove who you are) and encryption (so that only the recipient can read it).
-
+gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt MICOMPA_doc_cifrado_y_firmado.txt #Open the envelope (decipher it) and check the wax seal (verify the signature).
+cat doc_cifrado_y_firmado_descifrado_y_validado.txt #It simply prints the contents of a file to your screen. Running it on the file you just processed demonstrates the complete success of the cryptography cycle.
