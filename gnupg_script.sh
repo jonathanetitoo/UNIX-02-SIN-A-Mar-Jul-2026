@@ -14,3 +14,4 @@ gpg --decrypt cifradoadrian.txt # decifra el mensaje de mi amigo
 gpg --clearsign cifradoadrian.txt # toma un archivo y lo firma digitalmente y crea un nuevo archivo
 gpg --sign cifradoadrian.txt.asc # firma el archivo digitalmente
 gpg --detach-sign cifradoadrian.txt.asc # crea una firma separada del archivo
+gpg --verify cifradoadrian.txt.asc # verifica la firma digital del celar sign
