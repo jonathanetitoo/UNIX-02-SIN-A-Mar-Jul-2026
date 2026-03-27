@@ -8,3 +8,11 @@ history
 cd /proc
 #watch the content in the file cpuinfo
 cat cpuinfo
+#transform a C code file in a executable binary file
+gcc saludo.c -o saludobin
+#move the file in binary to /bin
+sudo mv saludobin /bin/
+#change directory to /etc directory
+cd /etc
+#change directory to gss/ directory
+cd gss/
