@@ -11,3 +11,5 @@ gcc saludo.c -o saludo.bin
 move
 sudo mv saludo.bin /bin
 saludo.bin
+#Print Working Directory
+pwd 
