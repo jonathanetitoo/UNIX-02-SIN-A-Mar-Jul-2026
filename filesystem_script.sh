@@ -15,3 +15,5 @@ ls     # list files and directoyes on the / dev directory
 cd gss/ # change directory / gss
 saludobin # run code
 pwd # print working directory
+cd/ # go to the root directory
+ls -F # to see whats inside the terminal
