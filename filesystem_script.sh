@@ -16,3 +16,9 @@ cd /etc
 cd gss/
 #Print the absolute path of the current working directory
 pwd
+#Change the current working directory to the root directory
+cd /
+#List directory contents with file type indicators
+ls -F
+#Display directory contents along with their unique index node identifiers
+ls -i
