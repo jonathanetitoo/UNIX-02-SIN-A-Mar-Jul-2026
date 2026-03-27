@@ -25,8 +25,12 @@ gpg --import mi_llave_publica.asc #This command allows importing my partner's pu
 $ echo "Te amo ariel"> doc_no_cifrado.txt #We created an unencrypted text file. The "$"" sign means regular user, while the "#" sign means superuser.
 #Echo writes the text to be displayed to standard output. But in this case, it redirects to a .txt file using the ">"
 
-#To verify the creation of the document we use:
-ls
+#To verify the creation and content of the document we use:
+ls 
+cat xxxxxxxxxx
+
+gpg --output cifrado_doc.txt --encrypt --recipient 6C6D7179B498A78979F103591EFC06CF0E3DBE76 doc_no_cifrado.txt #encrypts a file using a specific recipient's public key so that no one else can read it, saving the result to "encrypted_doc.txt"
+gpg --decrypt MICOMPAAriel_doc_cifrado.txt #Decrypt the encrypted file using the protected key (1-8) and display the contents on the terminal's standard output.
 
 #--------------------------
 #Block D
