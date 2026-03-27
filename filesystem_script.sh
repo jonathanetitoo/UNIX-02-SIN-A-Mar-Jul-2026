@@ -15,6 +15,9 @@ sudo mv saludobin /bin #this command is similar to the previous one, but it uses
 ls /bin/saludobin #this command lists the file named "saludobin" in the /bin directory. It is used to verify that the file has been successfully moved to the /bin directory. If the file is present, it will be displayed in the output of the command. This allows the user to confirm that "saludobin" is now located in /bin and can be executed as a command from anywhere in the terminal.
 saludobin #this command executes the "saludobin" binary file that was moved to the /bin directory. By running this command, the user can execute the code contained in "saludobin" and see its output in the terminal. This allows the user to interact with the program and see the results of its execution.
 pwd #this command prints the current working directory in the terminal. It shows the full path of the directory that the user is currently in. This is useful for confirming your location in the file system and ensuring that you are in the correct directory before executing commands or accessing files.
+cd / #this command changes the current working directory to the root directory (/) of the file system. The root directory is the top-level directory that contains all other files and directories in the system. By running this command, the user can navigate to the root directory and access its contents or perform operations from that location.
+ls -F #this command lists the files and directories in the current directory, and the -F option adds a character to the end of each entry to indicate its type. For example, directories will have a trailing slash (/), executable files will have an asterisk (*), and symbolic links will have an at symbol (@). This helps users quickly identify the types of files and directories in the listing.
+
 
 #the name if the archive is not saved on the inode, but in the directory that contains it.
 
