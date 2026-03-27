@@ -18,5 +18,7 @@ saludobin
 cd /etc
 #Enter a subfolder called gss located inside /etc)
 cd gss/
+#Displays the full path of the current directory where you are working in the terminal
+pwd
 
 
