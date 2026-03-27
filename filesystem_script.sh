@@ -22,3 +22,5 @@ pwd
 cd /
 #adds a symbol to each filename to indicate whether it is a folder, an executable, or a shortcut.
 ls -F
+#list directories and show their inode number
+ls -i
