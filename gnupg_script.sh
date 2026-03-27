@@ -35,3 +35,5 @@ gpg --decrypt MICOMPAAriel_doc_cifrado.txt #Decrypt the encrypted file using the
 #--------------------------
 #Block D
 #--------------------------
+
+gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #GPG adds a block of code at the beginning and end to guarantee that you wrote it and integrity.
