@@ -17,3 +17,4 @@ saludobin # run code
 pwd # print working directory
 cd/ # go to the root directory
 ls -F # to see whats inside the terminal
+ls -i # shows the inodo
