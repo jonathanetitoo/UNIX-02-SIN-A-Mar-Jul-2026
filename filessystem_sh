@@ -10,3 +10,4 @@ cat cpuinfo
 #en linux muestra la ruta absoluta del directorio actual en la terminal
 pwd
 cd / #se utiliza para navegar entre carpetas
+ls -F #clasificar visualmente los elementos de un directorio añadiendo un símbolo al final de cada nomb
