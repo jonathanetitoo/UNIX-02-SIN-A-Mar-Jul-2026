@@ -8,9 +8,10 @@ ls  # list files and directoyes on the / dev directory
 gcc saludo.c -o saludobin # compiler the file
 sudo mv saludobin /bin/  # move saludobin a /bin
 ls /bin | grep "saludo*" # prove if the files move
-cd # change directory
+cd # change directory / home codespace
 saludobin # run code
 cd /etc # change directory / etc
 ls     # list files and directoyes on the / dev directory
 cd gss/ # change directory / gss
 saludobin # run code
+pwd # print working directory
