@@ -4,3 +4,8 @@ cd / key
 ls 
 #To see the history of commands you have executed in the terminal.
 history
+#Used to change the current directory to /proc, a special virtual filesystem in Linux/Unix.
+cd /proc
+ls
+#Used to view detailed information about the CPU
+cat cpuinfo
