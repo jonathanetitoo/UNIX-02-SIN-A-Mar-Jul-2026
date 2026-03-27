@@ -59,3 +59,4 @@ pg --verify MICOMPAAriel_doc_no_cifrado.txt #Check the authenticity of the file;
 #--------------------------
 
 gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient XXXXX doc_no_cifrado.txt #It performs double protection: first it signs the file with the private key and then it encrypts it with the recipient's public key.
+gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt MICOMPAAriel_doc_cifrado_y_firmado.txt #
