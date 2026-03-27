@@ -19,3 +19,9 @@ saludobin
 cd /etc/gss
 #Shows the list of previously executed commands in the current shell session. Useful to review what has been done or to reuse commands with !number.
 history
+#Print Working Directory, see to the full path of the current directory
+pwd 
+#Add symbols to quickly identify what type of file it is.
+ls -F
+#Displays the inode numbers of each file or directory along with its name.
+ls -i
