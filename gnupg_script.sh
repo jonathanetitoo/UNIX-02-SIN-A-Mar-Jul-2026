@@ -6,3 +6,4 @@ gpg --list-keys #List the generated public keys, the User identifier, and the ke
 gpg --armor --export cesar.arciniegas.mejia4@gmail.com> my_key_publicaa.asc #Export the keys
 #The ">" redirects external output to text output
 #"--armor converts binary to text-readable text"
+gpg --list-secret-keys --keyid-format=long #Allows listing the private GPG key
