@@ -14,3 +14,4 @@ ls -F # es para listar archivos
 / #directorio
 * #archivo
 @ #enlace simbolico
+ls -i #muestra los inodos
