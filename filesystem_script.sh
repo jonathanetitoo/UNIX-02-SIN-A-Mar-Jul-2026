@@ -8,3 +8,4 @@ cd /workspaces/UNIX-02-SIN-A-Mar-Jul-2026/ # this one take me to the original on
 cd /etc # change directory to /etc directory
 cd 
 cd gss/ change director to gss/ directory
+pwd # print  working directory
