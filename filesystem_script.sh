@@ -16,3 +16,5 @@ sudo mv saludobin /bin/
 cd /etc
 #change directory to gss/ directory
 cd gss/
+#Print working directory, shows the current directory
+pwd
