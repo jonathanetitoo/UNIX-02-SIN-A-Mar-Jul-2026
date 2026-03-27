@@ -23,3 +23,4 @@ gpg --verify SantiLucina_doc_no_cifrado_firmado.txt #este comando se usa para vo
 gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #este comando crea un documento firmado en código binario
 gpg --verify SantiLucina_doc_no_cifrado_firmado_binario.txt #comando usado para verificar la firma binaria del compañero
 gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #comando usado para firmar un documento pero separando la firma de este hacia otro documento
+gpg --verify SantiLucina_firma_separada_doc_no_cifrado.sig SantiLucina_doc_no_cifrado.txt #comando usado para verificar la fírma separada de nuestro compañero
