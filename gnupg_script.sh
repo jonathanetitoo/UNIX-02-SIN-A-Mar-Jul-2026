@@ -1,12 +1,15 @@
-uname_a # Da la información del ordenador 
-which gpg # Da la ubicación del binaro de gpg
-gpg --version #Nos dice la version del gpg e información adicional 
-gpg --full-generate-key #para generar llave pública y la llave privada 
-gpg --list-keys #Para ver las llaves
-gpg -armor --export #Para exportar las llaves 
-gpg --list-secret-keys --keyid-format=long #Para listar y ver las llaves privadas 
-gpg --armor --export-secret-keys HASH #Exporta tu clave priva y la convierte en texto para copiar
-gpg --armor --export<ashley2007egmail.com> mi_llave_publica.asc #Exporta tu clave publica 
-gpg --import CAMILLA.asc #Exportar una clave desde un archivo 
-echo "Tqm, Camillaaa">doc_no_cifrado.txt #Se crea el archivo y redirige el texto a un archivo
-gpg --output doc_cifrado.txt --encrypt --recipient camiloscas.30.lascano@gmail.com #Cifra el contenido y usa la clave publica de la otra persona
+uname_a # Give the computer information
+which gpg # Give the location of the gpg binary
+gpg --version # It tells us the version of gpg and additional information
+gpg --full-generate-key # To generate public key and private key
+gpg --list-keys #To see the keys
+gpg -armor --export # To export the keys
+gpg --list-secret-keys --keyid-format=long # To list and view the private keys
+gpg --armor --export-secret-keys HASH # Export your private key and convert it into text to copy
+gpg --armor --export<ashley2007egmail.com> mi_llave_publica.asc #Export your public key
+gpg --import CAMILLA.asc #Export a key from a file
+echo "Tqm, Camillaaa">doc_no_cifrado.txt # The file is created and the text is redirected to a file
+gpg --output doc_cifrado.txt --encrypt --recipient camiloscas.30.lascano@gmail.com doc_cifrado.txt # Encrypt the content and use the other person's public key
+ gpg --decrypt doc_cifrado.txt # This command is used to decrypt an encrypted file.
+ which gpg / gpg --version # Used to find where GPG is installed on your system.
+ gpg --full-generate-key # Used to display version information about GPG.
