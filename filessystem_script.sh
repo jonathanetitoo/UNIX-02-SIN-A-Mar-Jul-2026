@@ -15,7 +15,7 @@ cat cpuinfo
  cd 
 #Executes a custom command or script named saludobin. In your context, this is probably the “greeting” script that prints a message like “Hello, welcome!”.
 saludobin
-##Changes the current directory to /etc/gss. This is likely a system configuration directory related to GSS (Generic Security Services) or other service configuration files.
+#Changes the current directory to /etc/gss. This is likely a system configuration directory related to GSS (Generic Security Services) or other service configuration files.
 cd /etc/gss
 #Shows the list of previously executed commands in the current shell session. Useful to review what has been done or to reuse commands with !number.
 history
