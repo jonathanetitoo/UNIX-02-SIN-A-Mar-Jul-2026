@@ -35,4 +35,5 @@ cat doc_no_cifrado_firmado.txt #muestra en la pantalla todo el contenido del arc
 
 gpg --verify PAULA_doc_no_cifrado_firmado.txt #Comprueba que el contenido del archivo no ha sido alterado y que la firma es auténtica.
 gpg --edit-key XXXXX #Modifica, gestiona o examinar los detalles de una clave GPG específica.
+gpg --sign -key paudome2007@gmail.com #Valida oficialmente la identidad del dueño de una clave pública al estampar tu propia firma digital sobre ella.
 gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #Genera un archivo binario comprimido que contiene el mensaje original y su firma digital, haciendo que el contenido no sea legible sin usar GPG.
