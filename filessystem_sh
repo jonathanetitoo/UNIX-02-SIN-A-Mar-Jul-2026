@@ -2,3 +2,7 @@ change directory to /dev directory
 cd /dev
 #list files and directories on the /dev directory
 ls 
+#archivos virtual en memoria
+cd /proc
+#muestra detalles minuciosos del procesador, incluyendo modelo, núcleos, velocidad y flags
+cat cpuinfo
