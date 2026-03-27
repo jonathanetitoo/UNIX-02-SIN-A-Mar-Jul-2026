@@ -18,3 +18,4 @@ gpg --verify msj_my_friend.txt.gpg #Verify signature in binary
 gpg --detach-sign msj_my_friend.txt #Create a separate signature without modifying the document
 gpg --verify msj_my_friend.txt.sig msj_my_friend.txt #Verify separate signature
 gpg --edit-key luisvillarrealp125@gmail.com #We assign the trust level to another person's public key
+gpg --sign-key luisvillarrealp125@gmail.com #We sign our friend's public key
