@@ -39,6 +39,9 @@ gpg --decrypt MICOMPAAriel_doc_cifrado.txt #Decrypt the encrypted file using the
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #GPG adds a block of code at the beginning and end to guarantee that you wrote it and integrity.
 gpg --verify MICOMPAAriel_doc_no_cifrado.txt #Check the authenticity of the file; GPG verifies if the content was modified or signed by the person it claims to be.
 
+gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #This command signs and compresses the file in a binary format, which cannot be read with the naked eye in order to avoid compromising security and space.
+gpg --verify MICOMPAAriel_doc_no_cifrado_firmado_binario.txt #GPG verifies the integrity and authorship of a signed binary file, analyzing it to see if there are any alterations.
+
 #--------------------------
 #Block E
 #--------------------------
@@ -52,6 +55,4 @@ pg --verify MICOMPAAriel_doc_no_cifrado.txt #Check the authenticity of the file;
 #Block F
 #--------------------------
 
-gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #This command signs and compresses the file in a binary format, which cannot be read with the naked eye in order to avoid compromising security and space.
-gpg --verify MICOMPAAriel_doc_no_cifrado_firmado_binario.txt #GPG verifies the integrity and authorship of a signed binary file, analyzing it to see if there are any alterations.
-
+gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #Create a separate signature; the main file remains unchanged, but the signature is saved in a separate file.
