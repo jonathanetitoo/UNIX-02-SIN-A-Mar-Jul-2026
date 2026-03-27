@@ -9,3 +9,11 @@ cd/proc
 ls
 # Displays the contents of the cpuinfo file.
 cat cpuinfo
+
+cd /workspaces/UNIX-02-SIN-A-Mar-Jul-2026/
+cd
+sudo mv saludobin /bin/
+saludobin
+cd /etc/gss
+history
+ pwd #Nos ayuda a ver la ruta del directorio 
