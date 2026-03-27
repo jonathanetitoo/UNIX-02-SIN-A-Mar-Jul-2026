@@ -37,3 +37,15 @@ gpg --decrypt MICOMPAAriel_doc_cifrado.txt #Decrypt the encrypted file using the
 #--------------------------
 
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #GPG adds a block of code at the beginning and end to guarantee that you wrote it and integrity.
+gpg --verify MICOMPAAriel_doc_no_cifrado.txt #Check the authenticity of the file; GPG verifies if the content was modified or signed by the person it claims to be.
+
+#--------------------------
+#Block E
+#--------------------------
+
+gpg --edit-key XXXXXXX #An interactive menu opens for managing keys, but with the trust command executed within the menu, a personal trust level is manually assigned to the owner of that key.
+gpg --sign-key XXXXXXX #I put my own signature on your key to certify your identity and verify if it is real.
+
+#--------------------------
+#Block F
+#--------------------------
