@@ -5,3 +5,5 @@ tty # Terminales a las que me puedo conectar
 ttys # Puertos seriales, interfaz física de comunicación que transmite datos de forma secuencial, bit a bit, a través de un solo hilo o par de hilos.
 sd (solid disk) a;b;c.... #Particiones de disco
 history #Muestra la lista numerada de todos los comandos que has ejecutado previamente en la sesión actual y las anteriores.
+cat cpuinfo # Podemos visualizar información detallada sobre el procesador, incluyendo modelo, núcleos, velocidad y flags.
+cd /proc #Cambia al directorio a proc el cual es un pseudo-sistema de archivos en memoria (RAM) que actúa como interfaz para las estructuras de datos del kernel, ofreciendo información detallada sobre procesos en ejecución
