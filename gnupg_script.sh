@@ -53,4 +53,5 @@ pg --verify MICOMPAAriel_doc_no_cifrado.txt #Check the authenticity of the file;
 #--------------------------
 
 gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #This command signs and compresses the file in a binary format, which cannot be read with the naked eye in order to avoid compromising security and space.
+gpg --verify MICOMPAAriel_doc_no_cifrado_firmado_binario.txt #GPG verifies the integrity and authorship of a signed binary file, analyzing it to see if there are any alterations.
 
