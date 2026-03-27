@@ -12,4 +12,4 @@ echo #It's the command to print text. Basically, it tells the system: "Repeat wh
 "love you cesar" #This is the first argument. The text you want to be processed.
 > #It's the redirection operator. Instead of displaying the result on the screen, it "pours" it into a file.
 doc_no_cifrado.txt #This is the name of the file that will receive the text. If it doesn't exist, Linux creates it; if it exists, it deletes the old file and writes the new one.
-
+$ gpg --output doc_cifrado.txt --encrypt --recipient 561B9E443A91A0A7A257ACF201EE56537872D793 doc_no_cifrado.txt #With this command, I take your original text file and transform it into a "digital vault" that only the owner of that specific key can open.
