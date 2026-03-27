@@ -12,4 +12,4 @@ echo "Tqm, Camillaaa">doc_no_cifrado.txt # The file is created and the text is r
 gpg --output doc_cifrado.txt --encrypt --recipient camiloscas.30.lascano@gmail.com doc_cifrado.txt # Encrypt the content and use the other person's public key
  gpg --decrypt doc_cifrado.txt # This command is used to decrypt an encrypted file.
  which gpg / gpg --version # Used to find where GPG is installed on your system.
- gpg --full-generate-key # Used to display version information about GPG.
+ 

@@ -1,0 +1,6 @@
+#Changes the current directory to /, which is the top-level directory in Linux/Unix systems.
+cd / key 
+#list files and directories on the / dev directory 
+ls 
+#To see the history of commands you have executed in the terminal.
+history
