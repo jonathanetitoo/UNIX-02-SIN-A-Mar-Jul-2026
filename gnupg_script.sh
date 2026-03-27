@@ -3,3 +3,6 @@ which gpg # location of the gpg binary
 gpg --version #gives the version and additional information
 gpg --full-generate-key #I generate public and private keys
 gpg --list-keys #Displays all public GPG keys in your local keyring, including user IDs, key IDs, and fingerprints
+gpg --armor --export #Exports a GPG public key to an ASCII-encapsulated text format, instead of binary.
+gpg --list-secret-keys --keyid-format=long #This command is used to list the secret (private) GPG keys available in your keyring, showing their IDs in the full, long format.
+gpg --armor --export-secret-keys A472F6F558168284 #Export the secret key
