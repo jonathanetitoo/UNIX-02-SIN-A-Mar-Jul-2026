@@ -17,7 +17,7 @@ saludobin #this command executes the "saludobin" binary file that was moved to t
 pwd #this command prints the current working directory in the terminal. It shows the full path of the directory that the user is currently in. This is useful for confirming your location in the file system and ensuring that you are in the correct directory before executing commands or accessing files.
 cd / #this command changes the current working directory to the root directory (/) of the file system. The root directory is the top-level directory that contains all other files and directories in the system. By running this command, the user can navigate to the root directory and access its contents or perform operations from that location.
 ls -F #this command lists the files and directories in the current directory, and the -F option adds a character to the end of each entry to indicate its type. For example, directories will have a trailing slash (/), executable files will have an asterisk (*), and symbolic links will have an at symbol (@). This helps users quickly identify the types of files and directories in the listing.
-
+ls -i #this command lists the files and directories in the current directory, and the -i option displays the inode number of each file or directory. An inode is a data structure that stores information about a file or directory, such as its permissions, ownership, size, and location on the disk. By using this command, users can see the inode numbers associated with each file and directory, which can be useful for various purposes, such as troubleshooting or managing files based on their inodes.
 
 #the name if the archive is not saved on the inode, but in the directory that contains it.
 
