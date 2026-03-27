@@ -9,3 +9,6 @@ cd /etc # change directory to /etc directory
 cd 
 cd gss/ change director to gss/ directory
 pwd # print  working directory
+cd / jump to the root directory
+ls -F # Its to see whats inside the terminal
+
