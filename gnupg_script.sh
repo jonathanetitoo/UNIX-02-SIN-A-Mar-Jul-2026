@@ -14,3 +14,4 @@ echo #It's the command to print text. Basically, it tells the system: "Repeat wh
 doc_no_cifrado.txt #This is the name of the file that will receive the text. If it doesn't exist, Linux creates it; if it exists, it deletes the old file and writes the new one.
 $ gpg --output doc_cifrado.txt --encrypt --recipient 561B9E443A91A0A7A257ACF201EE56537872D793 doc_no_cifrado.txt #With this command, I take your original text file and transform it into a "digital vault" that only the owner of that specific key can open.
 gpg --decrypt MICOMPA_cifrado_doc.txt #With this command, I take that file that looks like digital garbage (MICOMPA_cifrado_doc.txt) and try to return it to its original state so that I can read it.
+gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #This command is great because here I'm not hiding anything, but rather giving my digital "word of honor"!
