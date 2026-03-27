@@ -9,3 +9,4 @@ cat cpuinfo
       #en media se cuentan las particiones 
 #en linux muestra la ruta absoluta del directorio actual en la terminal
 pwd
+cd / #se utiliza para navegar entre carpetas
