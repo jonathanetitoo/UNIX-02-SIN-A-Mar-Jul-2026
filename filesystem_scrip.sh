@@ -2,3 +2,5 @@
 cd /dev 
 #list files and directories on the /dev directory
 ls 
+/proc
+#pwd print working directory
