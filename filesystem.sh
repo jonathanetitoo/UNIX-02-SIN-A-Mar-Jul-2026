@@ -13,3 +13,9 @@ sudo mv saludo.bin /bin
 saludo.bin
 #Print Working Directory
 pwd 
+#Change directory to root
+cd /
+#Shows file types
+ls -F
+#List file inodes
+ls -i
