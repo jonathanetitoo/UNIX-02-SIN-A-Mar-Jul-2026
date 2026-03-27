@@ -7,3 +7,4 @@ pwd #print working directory
 cd / #To enter in the root directory
 ls -F # For view the indicator of the files
 ls -i #Fow view the inodes 
+#Hard link es como un acceso directo en windows
