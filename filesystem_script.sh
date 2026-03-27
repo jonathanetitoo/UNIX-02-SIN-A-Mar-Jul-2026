@@ -7,3 +7,10 @@ sd (solid disk) a;b;c.... #Particiones de disco
 history #Muestra la lista numerada de todos los comandos que has ejecutado previamente en la sesión actual y las anteriores.
 cat cpuinfo # Podemos visualizar información detallada sobre el procesador, incluyendo modelo, núcleos, velocidad y flags.
 cd /proc #Cambia al directorio a proc el cual es un pseudo-sistema de archivos en memoria (RAM) que actúa como interfaz para las estructuras de datos del kernel, ofreciendo información detallada sobre procesos en ejecución
+/media/ #Es donde el sistema operativo hace accesibles los archivos de unidades externas al conectarlas.
+bin/ # ejecutbales escenciales (ls, cp, mv) binarios
+etc/ #archivos de configuracion del sistema
+home/ #directorios personales de usuario
+var # datos raibales como los logs y los de BDD
+gcc saludo.c -o saludobin #Creo un archivo nuevo en binario con el contenido de saludo.c 
+sudo mv saludobin /bin/ # Mueve el contenido de saludobin al archivo /bin/
