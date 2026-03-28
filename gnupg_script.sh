@@ -15,4 +15,6 @@ gpg --armor --export-secret-keys 5B89AD80508878A9
  gpg --output doc_no_cifrado_firmado_bin.txt --sign doc_no_cifrado.txt
 gpg --output doc_no_cifrado_firmado_detached.txt --sign doc_no_cifrado.txt
 gpg --verify meco_doc_no_cifrado_firmado_bin.txt
-gpg --verify meco_doc_no_cifrado_firmado_detached.txt
+gpg --verify meco_doc_no_cifrado_firmado_detached.txt meco_doc_no_cifrado.txt
+gpg --edit-key emilio.sebastianc@gmail.com
+gpg --sign-key emilio.sebastianc@gmail.com
