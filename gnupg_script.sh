@@ -13,4 +13,5 @@ gpg --output doc_cifrado.txt --encrypt --recipient camiloscas.30.lascano@gmail.c
  gpg --decrypt doc_cifrado.txt # This command is used to decrypt an encrypted file.
  which gpg / gpg --version # Used to find where GPG is installed on your system.
  gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #Use GNU Privacy Guard to digitally sign a text file; it does not encrypt the content, it only signs it.
- 
+ cat doc_no_cifrado_firmado.tx #
+ gpg --verify doc_no_cifrado_firmado_binariocamilla.txt #
