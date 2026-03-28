@@ -21,5 +21,9 @@ gpg --output doc_cifrado.txt --encrypt --recipient camiloscas.30.lascano@gmail.c
  gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #Verify the digital signature of the file and confirm if it is valid and has not been altered.}
  gpg --verify doc_no_cifrado_firmadocamilla.txt #Verify the file's digital signature and check if it is authentic and has not been modified.
  gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #Create a separate digital signature from the original file and save it in .sig format.
- 
+ gpg --verify camilla_firma_separada_doc_no_cifrado.sig camilla_doc_no_cifrado.txt #Verify the separate signature using the original file to confirm that it is authentic and has not been modified.
+ gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient XXXXXXX doc_no_cifrado.txt #
+ gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt camilla_doc_cifrado_y_firmado.txt #
+
+
 
