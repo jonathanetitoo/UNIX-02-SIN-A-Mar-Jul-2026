@@ -31,6 +31,7 @@ gpg --verify Ashley_doc_no_cifrado_firmado_binario.txt #is used to verify the di
 gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #is used to sign the document and separate the signature from the document
 gpg --verify Ashley_firma_separada_doc_no_cifrado.sig Ashley_doc_no_cifrado.txt #is used to verify a detached signature.
 gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient XXXXXXX doc_no_cifrado.txt #is used to encrypt and sign a file.
+gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt Ashley_doc_cifrado_y_firmado.txt #uses GPG to decrypt the file Ashley_doc_cifrado_y_firmado.txt and save the result as doc_cifrado_y_firmado_descifrado_y_validado.txt.
 
 
 
