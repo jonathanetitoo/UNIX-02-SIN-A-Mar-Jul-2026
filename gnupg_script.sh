@@ -13,3 +13,6 @@ gpg --armor --export-secret-keys 5B89AD80508878A9
  gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt
  gpg --verify meco_doc_no_cifrado_firmado.txt
  gpg --output doc_no_cifrado_firmado_bin.txt --sign doc_no_cifrado.txt
+gpg --output doc_no_cifrado_firmado_detached.txt --sign doc_no_cifrado.txt
+gpg --verify meco_doc_no_cifrado_firmado_bin.txt
+gpg --verify meco_doc_no_cifrado_firmado_detached.txt
