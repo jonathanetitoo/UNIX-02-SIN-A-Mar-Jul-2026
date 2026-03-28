@@ -27,6 +27,7 @@ gpg --edit-key XXXXXXXXXXXXXXXXXXXXXX #is used to open the key editing menu for 
 gpg --sign-key XXXXXXXXXXX #is used to sign another person’s GPG public key
 gpg --verify Ashley_doc_no_cifrado_firmado.txt #used to verify the digital signature of the file Ashley_doc_no_cifrado_firmado.txt.
 gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #is used to sign the file in binary format
+gpg --verify Ashley_doc_no_cifrado_firmado_binario.txt #is used to verify the digital signature of the binary signed file
 
 
 
