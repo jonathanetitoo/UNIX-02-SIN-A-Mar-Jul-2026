@@ -26,3 +26,4 @@ gpg --sign-key #estamos certificando la autenticidad de la llave pública de nue
 gpg --encrypt --sign #es un proceso de doble capa que utiliza la llave pública del destinatario para ocultar el mensaje y la propia llave privada para sellar la identidad
 #compartimos el archivo con la pareja
 gpg --decrypt # descrifrar y validar de forma segura
+cat #me muestra el mensaje de texto
