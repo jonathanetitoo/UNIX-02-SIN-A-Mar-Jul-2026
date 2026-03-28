@@ -25,6 +25,7 @@ cat doc_no_cifrado_firmado.txt #displays the contents of the file doc_no_cifrado
 gpg --verify Ashley_doc_no_cifrado_firmado.txt #used to verify the digital signature of the file Ashley_doc_no_cifrado_firmado.txt.
 gpg --edit-key XXXXXXXXXXXXXXXXXXXXXX #is used to open the key editing menu for the specified GPG key
 gpg --sign-key XXXXXXXXXXX #is used to sign another person’s GPG public key
+gpg --verify Ashley_doc_no_cifrado_firmado.txt #used to verify the digital signature of the file Ashley_doc_no_cifrado_firmado.txt.
 
 
 
