@@ -20,6 +20,8 @@ gpg --decrypt Ashley_doc_cifrado.txt # decrypt the encrypted file
 
 #Bloque D- Firma de documentos
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #the file is signed using clearsign
+ls #see what files and directories are available
+cat doc_no_cifrado_firmado.txt #displays the contents of the file doc_no_cifrado_firmado.txt in the terminal
 
 
 
