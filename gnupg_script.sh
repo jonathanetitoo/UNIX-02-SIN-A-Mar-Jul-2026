@@ -19,4 +19,4 @@ gpg --output doc_cifrado.txt --encrypt --recipient camiloscas.30.lascano@gmail.c
  #Then we put the number depending on the level of confidence, in my case, I put 4, which is who believes that person verifies identities correctly and we also put the letter q
  gpg --sign-key #It allows you to edit and manage a GPG key.
  gpg --verify doc_no_cifrado_firmado_binariocamilla.txt #Verify the digital signature of the file and confirm if it is valid and has not been altered.
- 
+ gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #Verify the digital signature of the file and confirm if it is valid and has not been altered.}
