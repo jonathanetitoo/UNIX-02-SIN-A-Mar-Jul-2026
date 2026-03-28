@@ -43,5 +43,11 @@ cd /etc/gss
 history
 
 #Display the list of recently executed commands.
+
 ls -F
-# Los inodos de cada archovo en el directorio 
+# Add simbols to to identify the type of file 
+
+ls -i
+
+# The inode numbers of the files in the directory 
+
