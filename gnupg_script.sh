@@ -29,6 +29,7 @@ gpg --verify Ashley_doc_no_cifrado_firmado.txt #used to verify the digital signa
 gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #is used to sign the file in binary format
 gpg --verify Ashley_doc_no_cifrado_firmado_binario.txt #is used to verify the digital signature of the binary signed file
 gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #is used to sign the document and separate the signature from the document
+gpg --verify Ashley_firma_separada_doc_no_cifrado.sig Ashley_doc_no_cifrado.txt #is used to verify a detached signature.
 
 
 
