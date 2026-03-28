@@ -18,3 +18,5 @@ gpg --decrypt doc_cifrado.txt #va a desencriptar el mensaje
 gpg --clearsign #firmar el contenido sin ocultar el texto original
 gpg --sign doc_no_cifrado.txt # Firmar en formato binario
 gpg --decrypt "doc_no_cifradosecundario.txt (1).gpg" #abrir el archivo firmado con la contraseña
+#blque E
+gpg --edit-key (trust) #Esto nos hace establecer el grado de confianza
