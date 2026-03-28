@@ -20,5 +20,6 @@ gpg --output doc_cifrado.txt --encrypt --recipient camiloscas.30.lascano@gmail.c
  gpg --sign-key #It allows you to edit and manage a GPG key.
  gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #Verify the digital signature of the file and confirm if it is valid and has not been altered.}
  gpg --verify doc_no_cifrado_firmadocamilla.txt #Verify the file's digital signature and check if it is authentic and has not been modified.
+ gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt #Create a separate digital signature from the original file and save it in .sig format.
  
 
