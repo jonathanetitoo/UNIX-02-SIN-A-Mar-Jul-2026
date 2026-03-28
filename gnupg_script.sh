@@ -13,7 +13,7 @@ gpg --list-secret-keys --keyid-format-long #exportar la llave privada
 #Bloque B
 gpg --armor --export-secret-keys XXXXXXX #exporta una llave privada específica reemplazando las X por un sec específico, no es necesario las XXX si solo se tiene 1 par de llaves
 gpg --armor --export correo1@gmail.com #exportar.
-gpg --import NOMBRELEGIDO_mi_llave_públic.asc #lo ultimo depende del nombre, es importar la llave de alguien mas, es necesario que esté importado el archivo de la llave primero
+gpg --import NOMBRELEGIDO_mi_llave_públic.asc #lo último depende del nombre, es importar la llave de alguien mas, es necesario que esté importado el archivo de la llave primero
 
 #Bloque C
 $ echo "este mensaje es solo para sus ojos" > doc_no_cifrado.txt #creacion de un mensaje estandar
