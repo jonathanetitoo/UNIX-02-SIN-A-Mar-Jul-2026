@@ -19,4 +19,12 @@ gpg --output doc_cifrado.txt --encrypt --recipient FF6770C528E2BF386F256480BF1F2
 gpg --decrypt Ashley_doc_cifrado.txt # decrypt the encrypted file 
 
 #Bloque D- Firma de documentos
-gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt #
+gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #the file is signed using clearsign
+
+
+
+
+#Bloque E — Web of Trust
+
+
+#Bloque F — Cifrado y firma simultáneos
