@@ -12,4 +12,5 @@ echo "Tqm, Camillaaa">doc_no_cifrado.txt # The file is created and the text is r
 gpg --output doc_cifrado.txt --encrypt --recipient camiloscas.30.lascano@gmail.com doc_cifrado.txt # Encrypt the content and use the other person's public key
  gpg --decrypt doc_cifrado.txt # This command is used to decrypt an encrypted file.
  which gpg / gpg --version # Used to find where GPG is installed on your system.
+ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt #Use GNU Privacy Guard to digitally sign a text file; it does not encrypt the content, it only signs it.
  
