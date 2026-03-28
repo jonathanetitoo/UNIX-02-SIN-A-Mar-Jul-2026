@@ -21,3 +21,6 @@ gpg --decrypt "doc_no_cifradosecundario.txt (1).gpg" #abrir el archivo firmado c
 #blque E
 gpg --edit-key (trust) #Esto nos hace establecer el grado de confianza
 gpg --sign-key #estamos certificando la autenticidad de la llave pública de nuestra pareja
+#volvimos a verificar el documento de la apreja para ver el cambio
+#bloque F cifrado y firmas simultaneos
+gpg --encrypt --sign #es un proceso de doble capa que utiliza la llave pública del destinatario para ocultar el mensaje y la propia llave privada para sellar la identidad
