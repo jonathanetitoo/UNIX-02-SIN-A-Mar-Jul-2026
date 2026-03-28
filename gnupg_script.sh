@@ -18,3 +18,4 @@ gpg --verify meco_doc_no_cifrado_firmado_bin.txt
 gpg --verify meco_doc_no_cifrado_firmado_detached.txt meco_doc_no_cifrado.txt
 gpg --edit-key emilio.sebastianc@gmail.com
 gpg --sign-key emilio.sebastianc@gmail.com
+gpg --output doc_cifrado_y_firmado_bin.txt --encrypt --sign --recipient emilio.sebastianc@gmail.com doc_no_cifrado.txt
