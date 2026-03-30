@@ -11,10 +11,10 @@ cd /proc #Cambia al directorio a proc el cual es un pseudo-sistema de archivos e
 bin/ # ejecutbales escenciales (ls, cp, mv) binarios
 etc/ #archivos de configuracion del sistema
 home/ #directorios personales de usuario
-var # datos raibales como los logs y los de BDD
+var # datos variables como los logs y los de BDD
 gcc saludo.c -o saludobin #Creo un archivo nuevo en binario con el contenido de saludo.c 
 sudo mv saludobin /bin/ # Mueve el contenido de saludobin al archivo /bin/
-inodo #identificado unico
+inodo #identificador unico
 #El nombre del archivo no se guarda en el inodo sino en el directorio que lo contiene 
 pwd #((Print Working Directory) en Linux muestra la ruta absoluta del directorio actual en la terminal
 ls -F # Lista el contenido del directorio añadiendo un carácter indicador al final de cada nombre para identificar su tipo
@@ -26,6 +26,6 @@ ls -i #Muestra los inodos
 Hard link #Crea un segundo nombre para el mismo inodo
 # Si borras el nombre original el archivo sigue existiendo siempre y cuando permanezca un hard link
 Soft link #Es un puntero (como acceso directo en windows) al nombre de otro archivo
-#Si borrs el original, el enlace simbólico se rompe.
+#Si borras el original, el enlace simbólico se rompe.
 bin #Comandos como usuario general
 sbin #Comandos como administrador
