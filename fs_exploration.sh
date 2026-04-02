@@ -7,6 +7,10 @@ sudo apt update # actualiza con exito el repositorio
 apt upgrade # actualiza 
 
 apt install parted #instalar el  paquete en partes
-sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n" #Me da la informacion del sector y del disco y todos los datos 
+sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n" #Me da la informacion del sector y del disco y todos los datos ,y espacios dispobibles 
 sudo parted -l # me da particiones 
-lsblk # 
+
+lsblk #Muestra estrucutra de discos y uuids 
+
+[ -d /sys/firmware/efi ] && echo"UEFI" || echo "BIOS    
+#muestra la bios o la uefi 
