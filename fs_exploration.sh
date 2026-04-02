@@ -40,3 +40,27 @@ sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n"
 #|| (Logical OR) = If the previous test was false (the directory does not exist), it executes the final command instead.
 #echo "BIOS" = Prints "BIOS" to the terminal as a fallback.
 # Check if the EFI firmware directory exists; if it does, print 'UEFI', otherwise print 'BIOS'
+
+cat /etc/default/grub # Read the main configuration file for the bootloader to view or verify system-wide boot settings, such as menu timeouts and kernel parameters.
+# GRUB_TIMEOUT: How many seconds the boot menu stays on screen before starting the default OS.
+# GRUB_DEFAULT: Which operating system or kernel version to start automatically.
+# GRUB_CMDLINE_LINUX_DEFAULT: Specific parameters passed to the Linux kernel (like quiet or splash to hide boot text).
+boot/ # necessary files to run the operating system
+lost+found/ # recovered files
+srv/ # service data
+media/ # where USB/CDs are automatically mounted (the process of integrating a storage device or a remote file system into the operating system's main directory tree).
+/run # saves temporary information.
+# The physical socket (zócalo) is the mechanical connector on the motherboard where the processor is installed, while the logical socket is a software communication endpoint (IP address + port) that allows applications to send and receive data over a network.
+
+#a block is the minimum unit of storage that the file system uses to save data physically.
+#Think of the disk like a notebook:
+# Each block = one page
+# you cannot use "half a page": if you write just a little, we still occupy the entire page.
+#The machine only reads blocks
+
+echo "mi archivo" > text.txt # Create a file named text.txt containing the string "mi archivo"
+stat text.txt # Display detailed status and metadata information for the file text.txt
+#Size = actual bytes of the file
+#Blocks = disk blocks used
+#IO Block = system block size
+#regular file = file type
