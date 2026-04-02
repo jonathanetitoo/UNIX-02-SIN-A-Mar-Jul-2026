@@ -9,3 +9,6 @@ updates the local package list
 
 sudo apt upgrade
 Update all installed software packages
+
+sudo apt install parted
+install parted
