@@ -6,3 +6,5 @@ sudo apt update
 # to update the list of available packages
 sudo apt upgrade 
 #used to install updates for the packages already installed on your system
+sudo apt install parted
+# used to install the program parted on your Linux system
