@@ -20,7 +20,17 @@ sudo apt install parted
 &&
 # It means “to activate special interpretations”
 echo -e
-#It's a quick way to find out the system's boot type.
+# It's a quick way to find out the system's boot type.
 [ -d /sys/firmware/efi ] && echo "UEFI"|| echo "BIOS"
 #It is used to execute a command only if the previous one fails; it is the OR (yes or no) operator
 ||
+# Check if it's a directory
+-d
+# Create a file called test.txt and write inside
+echo "mi archivo" > test.txt 
+#Shows the files in the directory
+ls
+#Show what's inside the file
+cat test.txt
+#Displays detailed file information
+stat test.txt
