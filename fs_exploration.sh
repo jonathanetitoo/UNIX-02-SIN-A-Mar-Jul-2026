@@ -27,3 +27,7 @@ These are the ones that generate lines with hyphens (---) and line breaks.
 
 \n
 significa un salto de línea
+
+
+ [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
+ Confirm if it is UEFI or BIOS
