@@ -21,3 +21,6 @@ Lists all connected disks and their partitions, showing size, table type (MBR/GP
 
 lsblk -f
 It gives you a clear map of your disks and partitions, showing what file system they have, their labels, UUIDs, and mount points.
+
+echo -e
+These are the ones that generate lines with hyphens (---) and line breaks.
