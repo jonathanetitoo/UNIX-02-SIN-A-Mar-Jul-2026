@@ -37,3 +37,6 @@ significa un salto de línea
 
  ls
  List files in current directory using ls
+
+ cat
+ Display file content using cat command
