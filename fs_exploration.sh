@@ -12,3 +12,11 @@ sudo apt install parted
  sudo parted -l && echo -e "\n--\n" && lsblk -f && echo -e
  # It displays a list of all disks and their partitions on the system.
  sudo parted -l 
+ # shows disks with file systems
+ lsblk -f
+ # shows what is mounted
+ mount | grep
+ # executes the next command only if the previous one worked
+&&
+# It means “to activate special interpretations”
+-e
