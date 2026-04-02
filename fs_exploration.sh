@@ -19,4 +19,8 @@ sudo apt install parted
  # executes the next command only if the previous one worked
 &&
 # It means “to activate special interpretations”
--e
+echo -e
+#It's a quick way to find out the system's boot type.
+[ -d /sys/firmware/efi ] && echo "UEFI"|| echo "BIOS"
+#It is used to execute a command only if the previous one fails; it is the OR (yes or no) operator
+||
