@@ -14,3 +14,9 @@ lsblk #Muestra estrucutra de discos y uuids
 
 [ -d /sys/firmware/efi ] && echo"UEFI" || echo "BIOS    
 #muestra la bios o la uefi 
+ 
+ echo "mi achivo" > text.txt  #le dejp un mensaje para que tradusca 
+ 
+ cat text.txt #busca el mensaje 
+ 
+ stat text.txt #muestra la informacion del archivo y llamarlo 
