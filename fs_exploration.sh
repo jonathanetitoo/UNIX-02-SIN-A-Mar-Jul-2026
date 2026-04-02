@@ -18,3 +18,6 @@ It generates a complete report of your disks and partitions, showing both the pa
 
 parted -l
 Lists all connected disks and their partitions, showing size, table type (MBR/GPT), and details of each partition
+
+lsblk -f
+It gives you a clear map of your disks and partitions, showing what file system they have, their labels, UUIDs, and mount points.
