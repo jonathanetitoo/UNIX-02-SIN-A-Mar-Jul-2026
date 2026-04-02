@@ -8,5 +8,7 @@ sudo apt update
 sudo apt upgrade
 # Install the parted tool to manage disks
 sudo apt install parted
-# It gives you a complete summary of the disk's status, but clearer and more organized
- sudo parted -l && echo -e "/n--/n" && lsblk -f && echo -e
+# It's used to display disk and partition information in an organized way. First, it shows the disks with `parted -`. Then it prints a separator (`--`) and finally displays the partitions and file systems with `lsblk -f`.
+ sudo parted -l && echo -e "\n--\n" && lsblk -f && echo -e
+ # It displays a list of all disks and their partitions on the system.
+ sudo parted -l 
