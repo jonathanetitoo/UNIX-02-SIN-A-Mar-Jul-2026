@@ -6,3 +6,6 @@ Displays all information in alphabetical order by file name
 
 sudo apt update
 updates the local package list
+
+sudo apt upgrade
+Update all installed software packages
