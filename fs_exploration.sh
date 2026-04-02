@@ -31,5 +31,9 @@ significa un salto de línea
 
  [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
  Confirm if it is UEFI or BIOS
+
  echo 
  Add content to file using echo command
+
+ ls
+ List files in current directory using ls
