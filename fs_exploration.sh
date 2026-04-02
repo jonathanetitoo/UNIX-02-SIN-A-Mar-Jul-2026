@@ -8,3 +8,5 @@ sudo apt update
 sudo apt upgrade
 # Install the parted tool to manage disks
 sudo apt install parted
+# It gives you a complete summary of the disk's status, but clearer and more organized
+ sudo parted -l && echo -e "/n--/n" && lsblk -f && echo -e
