@@ -15,3 +15,6 @@ install parted
 
 sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n"
 It generates a complete report of your disks and partitions, showing both the partition table and the file systems, with separators to make it more readable.
+
+parted -l
+Lists all connected disks and their partitions, showing size, table type (MBR/GPT), and details of each partition
