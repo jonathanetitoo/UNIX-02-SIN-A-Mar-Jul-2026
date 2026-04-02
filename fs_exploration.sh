@@ -24,3 +24,6 @@ It gives you a clear map of your disks and partitions, showing what file system 
 
 echo -e
 These are the ones that generate lines with hyphens (---) and line breaks.
+
+\n
+significa un salto de línea
