@@ -1,0 +1,66 @@
+#Change the current working directory to the system's root directory.
+cd /
+# List the files and directories in the current location, adding a trailing character to indicate the file type.
+ls -F
+lib64@ #Libraries and applications compiled for 64-bit architectures. In the Filesystem Hierarchy Standard (FHS), the @ symbol often indicates a symbolic link to another directory containing 64-bit library files.
+init ram disk #The boot engine for the operating system.
+# load basic drivers (disk, USB, etc.)
+# prepares the system.
+#1. loads the firmware 
+# POST (Power-On-Self-Test)
+# Boot device search (MBR = 2 TB, 4 disk partitions; BIOS = the fundamental firmware installed on a computer's motherboard; UEFI = modern firmware that replaces traditional BIOS in new computers. It acts as an interface between the hardware and the operating system, offering faster booting, increased security (Secure Boot), support for large-capacity hard drives (>2 TB) via GPT (GUID Partition Table), and a more intuitive graphical interface).
+# Finds and mounts the real file system.
+POST #Verifies that all hardware is connected and functioning correctly to allow the operating system to start.
+FHS #Establishes a unified hierarchy under the root directory / to improve application interoperability, system management, and consistency across Linux distributions.
+sudo apt update # Update the local package index to reflect the latest versions available in the repositories.
+sudo apt upgrade # Install the newest versions of all packages currently installed on the system.
+sudo apt install parted # Download and install the 'parted' utility for manipulating disk partitions.
+Dependency Hell # A situation where the conflicting requirements of different software packages make it difficult or impossible to install or update them. his happens when Program A needs Version 1 of a library, but Program B needs Version 2 of that same library. You can't have both, so the system gets stuck.
+sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e "\n---\n"
+#sudo: Runs the command with root (administrator) privileges, which is required to read hardware partition tables.
+#parted: Invokes the GNU Parted partition manipulation program.
+#-l (list): Tells the program to list the partition layouts for all block devices (hard drives, SSDs, USBs) it can find. It shows the model, size, partition table type (MBR/GPT), and individual partitions.
+#AND (&&): This ensures the next command only runs if the previous one finished successfully (without errors).
+#echo -e "\n---\n"
+#echo: Prints text to the terminal.
+#-e: Enables the interpretation of backslash escapes.
+#\n---\n: Prints a newline, a dashed line separator, and another newline to visually separate the outputs of the two main commands.
+#lsblk -f
+#lsblk: List Block Devices. It displays a tree-like structure of your disks.
+#-f (filesystems): Adds specific info about filesystems. It shows what each partition is formatted as (ext4, fat32, ntfs), its UUID (unique ID), and where it is currently mounted in the system.
+# Run the partition editor to list all disk layouts with admin rights, print a visual separator, and then display a tree view of all block devices including their filesystem types, UUIDs, and mount points.
+
+[-d/sys/firmware/efi] && echo "UEFI" || echo "BIOS"
+# [ = starts a test (conditional).
+# -d = checks if it is a directory.
+# /sys/firmware/efi = Path to the system's EFI folder.
+# ] = Close the test
+#&& (Logical AND) = If the previous test is true (the directory exists), it executes the next command.
+#echo "UEFI" = Prints "UEFI" to the terminal if the test passed.
+#|| (Logical OR) = If the previous test was false (the directory does not exist), it executes the final command instead.
+#echo "BIOS" = Prints "BIOS" to the terminal as a fallback.
+# Check if the EFI firmware directory exists; if it does, print 'UEFI', otherwise print 'BIOS'
+
+cat /etc/default/grub # Read the main configuration file for the bootloader to view or verify system-wide boot settings, such as menu timeouts and kernel parameters.
+# GRUB_TIMEOUT: How many seconds the boot menu stays on screen before starting the default OS.
+# GRUB_DEFAULT: Which operating system or kernel version to start automatically.
+# GRUB_CMDLINE_LINUX_DEFAULT: Specific parameters passed to the Linux kernel (like quiet or splash to hide boot text).
+boot/ # necessary files to run the operating system
+lost+found/ # recovered files
+srv/ # service data
+media/ # where USB/CDs are automatically mounted (the process of integrating a storage device or a remote file system into the operating system's main directory tree).
+/run # saves temporary information.
+# The physical socket (zócalo) is the mechanical connector on the motherboard where the processor is installed, while the logical socket is a software communication endpoint (IP address + port) that allows applications to send and receive data over a network.
+
+#a block is the minimum unit of storage that the file system uses to save data physically.
+#Think of the disk like a notebook:
+# Each block = one page
+# you cannot use "half a page": if you write just a little, we still occupy the entire page.
+#The machine only reads blocks
+
+echo "mi archivo" > text.txt # Create a file named text.txt containing the string "mi archivo"
+stat text.txt # Display detailed status and metadata information for the file text.txt
+#Size = actual bytes of the file
+#Blocks = disk blocks used
+#IO Block = system block size
+#regular file = file type
