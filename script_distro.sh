@@ -1,1 +1,4 @@
 sudo apt upgrade #It is used to install the latest versions of already installed packages.
+sudo apt install -y git vim make gcc libncurses-dev flex bison bc \ 
+  cpio libelf-dev libssl-dev syslinux dosfstools qemu-system-x86 #This command is used to automatically install Git, Vim, compilers, libraries, and tools necessary for development and compilation on Linux.
+  
