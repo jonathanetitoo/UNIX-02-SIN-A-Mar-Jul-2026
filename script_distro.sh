@@ -18,3 +18,4 @@ sudo make CONFIG_PREFIX=/boot-files/initramfs install #Place BusyBox and its uti
 cd /boot-files/initramfs #Move it into the /boot-files/initramfs folder, which now contains the BusyBox installation and will be the basis of your initramfs for the kernel.
 sudo vi init #It allows you to write the startup script that will run when your initramfs starts.
 sudo rm linuxrc #Delete the default startup script so you can use your own init script.
+sudo chmod +x init #Enables the init script to run when the system starts.
