@@ -6,3 +6,4 @@ cd linux #This set of commands is used to clone the official Linux repository an
 make menuconfig #It is used to open an interactive menu to configure kernel options before compiling.
 make -j 2 #It is used to compile the code using 2 parallel processes to speed up the build.
 sudo mkdir /boot-files/initramfs #It is used to create the /boot-files/initramfs folder with administrator permissions.
+sudo mkdir /boot-files #That command is used to create the /boot-files folder in the root of the system with administrator privileges.
