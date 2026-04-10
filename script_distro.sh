@@ -14,3 +14,4 @@ cd busybox #It is used to clone the official BusyBox repository with minimal his
 make menuconfig #In BusyBox, this is used to customize which commands and utilities will be available in your BusyBox executable.
 make -j 2 #generates the main busybox binary using two parallel processes.
 sudo mkdir /boot-files/initramfs #Create the /boot-files/initramfs folder in the root of the system with administrator privileges, so that you can install or copy the initramfs files that will accompany your kernel there.
+sudo make CONFIG_PREFIX=/boot-files/initramfs install #Place BusyBox and its utilities inside /boot-files/initramfs to use them in your initramfs.
