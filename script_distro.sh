@@ -25,3 +25,4 @@ sudo su
 find . | cpio -o -H newc > ../init.cpio
 exit #I got a permission denied message, so I used this command
 cd .. #changes to the parent directory of the current one.
+sudo su #Change your current shell to root so that all subsequent commands are executed with administrator privileges.
