@@ -31,4 +31,5 @@ mkfs -t fat boot #prepara tu archivo boot como un disco con formato FAT para alm
 syslinux boot #Convert your boot image into a bootable disk with Syslinux.
 mkdir m #mkdir m creates an empty folder called m inside your working directory.
 mount boot m #Mount your boot image in the m folder using loop to treat it as a disk.
- 
+cp bzImage init.cpio m #Put the kernel and initramfs inside the bootable disk you prepared with Syslinux.
+
