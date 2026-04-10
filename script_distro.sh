@@ -15,3 +15,4 @@ make menuconfig #In BusyBox, this is used to customize which commands and utilit
 make -j 2 #generates the main busybox binary using two parallel processes.
 sudo mkdir /boot-files/initramfs #Create the /boot-files/initramfs folder in the root of the system with administrator privileges, so that you can install or copy the initramfs files that will accompany your kernel there.
 sudo make CONFIG_PREFIX=/boot-files/initramfs install #Place BusyBox and its utilities inside /boot-files/initramfs to use them in your initramfs.
+cd /boot-files/initramfs #Move it into the /boot-files/initramfs folder, which now contains the BusyBox installation and will be the basis of your initramfs for the kernel.
