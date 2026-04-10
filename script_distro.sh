@@ -8,3 +8,4 @@ make -j 2 #It is used to compile the code using 2 parallel processes to speed up
 sudo mkdir /boot-files/initramfs #It is used to create the /boot-files/initramfs folder with administrator permissions.
 sudo mkdir /boot-files #That command is used to create the /boot-files folder in the root of the system with administrator privileges.
 sudo cp arch/x86/boot/bzImage /boot-files/ #sirve para copiar la imagen del kernel compilado (bzImage) al directorio /boot-files/ con permisos de administrador.
+cd .. #This is used to move you to the parent directory of the current one.
