@@ -4,3 +4,4 @@ sudo apt install -y git vim make gcc libncurses-dev flex bison bc \
 git clone --depth 1 https://github.com/torvalds/linux.git 
 cd linux #This set of commands is used to clone the official Linux repository and enter its folder.
 make menuconfig #It is used to open an interactive menu to configure kernel options before compiling.
+make -j 2 #It is used to compile the code using 2 parallel processes to speed up the build.
