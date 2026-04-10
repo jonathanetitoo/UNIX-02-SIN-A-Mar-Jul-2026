@@ -9,3 +9,5 @@ sudo mkdir /boot-files/initramfs #It is used to create the /boot-files/initramfs
 sudo mkdir /boot-files #That command is used to create the /boot-files folder in the root of the system with administrator privileges.
 sudo cp arch/x86/boot/bzImage /boot-files/ #sirve para copiar la imagen del kernel compilado (bzImage) al directorio /boot-files/ con permisos de administrador.
 cd .. #This is used to move you to the parent directory of the current one.
+git clone --depth 1 https://git.busybox.net/busybox 
+cd busybox #It is used to clone the official BusyBox repository with minimal history and enter its folder.
