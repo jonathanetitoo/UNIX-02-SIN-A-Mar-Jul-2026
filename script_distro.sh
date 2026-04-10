@@ -19,3 +19,5 @@ cd /boot-files/initramfs #Move it into the /boot-files/initramfs folder, which n
 sudo vi init #It allows you to write the startup script that will run when your initramfs starts.
 sudo rm linuxrc #Delete the default startup script so you can use your own init script.
 sudo chmod +x init #Enables the init script to run when the system starts.
+sudo find . | cpio -o -H newc > ../init.cpio
+sudo su #Pack all the contents of the current directory (initramfs) into an init.cpio file in newc format, which will be your initramfs ready for the kernel to load at boot time.
