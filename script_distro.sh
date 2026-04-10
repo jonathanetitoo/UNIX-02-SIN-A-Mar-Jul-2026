@@ -11,3 +11,4 @@ sudo cp arch/x86/boot/bzImage /boot-files/ #sirve para copiar la imagen del kern
 cd .. #This is used to move you to the parent directory of the current one.
 git clone --depth 1 https://git.busybox.net/busybox 
 cd busybox #It is used to clone the official BusyBox repository with minimal history and enter its folder.
+make menuconfig #In BusyBox, this is used to customize which commands and utilities will be available in your BusyBox executable.
