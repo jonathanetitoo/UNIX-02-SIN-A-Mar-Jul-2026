@@ -29,3 +29,4 @@ sudo su #Change your current shell to root so that all subsequent commands are e
 dd if=/dev/zero of=boot bs=1M count=50 #It generates a 50MB empty image that you can then use as a simulated disk or partition.
 mkfs -t fat boot #prepara tu archivo boot como un disco con formato FAT para almacenar datos o arrancar.
 syslinux boot #Convert your boot image into a bootable disk with Syslinux.
+mkdir m #mkdir m creates an empty folder called m inside your working directory.
