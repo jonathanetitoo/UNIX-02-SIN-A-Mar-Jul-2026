@@ -30,4 +30,5 @@ dd if=/dev/zero of=boot bs=1M count=50 #It generates a 50MB empty image that you
 mkfs -t fat boot #prepara tu archivo boot como un disco con formato FAT para almacenar datos o arrancar.
 syslinux boot #Convert your boot image into a bootable disk with Syslinux.
 mkdir m #mkdir m creates an empty folder called m inside your working directory.
- mount boot m #Mount your boot image in the m folder using loop to treat it as a disk.
+mount boot m #Mount your boot image in the m folder using loop to treat it as a disk.
+ 
