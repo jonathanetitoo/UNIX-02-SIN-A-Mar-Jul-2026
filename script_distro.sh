@@ -34,3 +34,6 @@ mount boot m #Mount your boot image in the m folder using loop to treat it as a 
 cp bzImage init.cpio m #Put the kernel and initramfs inside the bootable disk you prepared with Syslinux.
 ls /boot-files #verificar donde estan los archivos
 ls /boot-files/initramfs #verifica la carpeta
+img 1(/workspaces/UNIX-02-SIN-A-Mar-Jul-2026/3.jpeg)
+img 2(/workspaces/UNIX-02-SIN-A-Mar-Jul-2026/2.jpeg)
+img 3(/workspaces/UNIX-02-SIN-A-Mar-Jul-2026/3.jpeg)
