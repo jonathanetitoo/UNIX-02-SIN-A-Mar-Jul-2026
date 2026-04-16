@@ -8,3 +8,4 @@ mkdir -- -rf #irve para proteger nombres de archivos o carpetas que empiezan con
 rmdir -- -rf # se usa para remover (eliminar) directorios vacíos.
 ls --help #manual opcion corta
 man ls # manual opcion completa salir con q
+man git #ejecutar man git, verás una página con la descripción general de Git, sus subcomandos principales (como clone, commit, push, pull, etc.) y cómo usarlos.
