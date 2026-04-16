@@ -33,3 +33,4 @@ ls /etc  #It displays all files and subdirectories within /etc, such as network 
 cat /etc/archivo_protegido #Prints to screen what is written inside /etc/protected_file.
 echo "hola" | sudo tee /etc/archivo_protegido #It displays on the screen what it writes to the file (you will see "hello" in the terminal).
 /dev/null #Throwing something into /dev/null is like throwing it in the digital trash, because you can never get it back.
+tee # It is used to duplicate the output of a command, sending it to a file and to the screen at the same time.
