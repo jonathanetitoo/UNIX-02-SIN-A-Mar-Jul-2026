@@ -12,3 +12,12 @@ man git #ejecutar man git, verás una página con la descripción general de Git
 git man-clone #Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless
 # --no-single-branch is given to fetch the histories near the tips of all branches. If you want to clone submodules
           # shallowly, also pass --shallow-submodules.
+          #spacio → baja una página completa.
+
+#Enter → baja una línea.
+
+#b → sube una página completa.
+
+#n (minúscula) → busca la siguiente coincidencia de una palabra que hayas buscado.
+
+#N (mayúscula) → busca la coincidencia anterior de esa misma palabra.
