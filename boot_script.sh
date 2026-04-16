@@ -9,3 +9,6 @@ rmdir -- -rf # se usa para remover (eliminar) directorios vacíos.
 ls --help #manual opcion corta
 man ls # manual opcion completa salir con q
 man git #ejecutar man git, verás una página con la descripción general de Git, sus subcomandos principales (como clone, commit, push, pull, etc.) y cómo usarlos.
+git man-clone #Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless
+# --no-single-branch is given to fetch the histories near the tips of all branches. If you want to clone submodules
+          # shallowly, also pass --shallow-submodules.
