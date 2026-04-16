@@ -7,4 +7,4 @@ ls -lah #muestra todo, con detalles y tamaños fáciles de leer.
 mkdir -- -rf #irve para proteger nombres de archivos o carpetas que empiezan con guion (-), evitando que se confundan con parámetros del comando.
 rmdir -- -rf # se usa para remover (eliminar) directorios vacíos.
 ls --help #manual opcion corta
-man ls # manual opcion completa
+man ls # manual opcion completa salir con q
