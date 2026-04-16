@@ -26,3 +26,4 @@ chmod +x script.sh #Gives execution permission to the script.sh file for all use
 chmod u+x script.sh #Gives execution permission to the script.sh file only to the owner user.
 touch secreto.txt #create an empty file called
 chmod o-r secreto.txt #Remove read permission for the secret.txt file from “other” users.
+chmod u+rw,go-rwx privado #It gives the owner user read and write permissions on private files and removes all permissions for groups and others.
