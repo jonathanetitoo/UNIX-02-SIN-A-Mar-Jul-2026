@@ -24,3 +24,4 @@ git man-clone #Create a shallow clone with a history truncated to the specified 
 touch script.sh #Crear nuevo directorio
 chmod +x script.sh #Gives execution permission to the script.sh file for all users.
 chmod u+x script.sh #Gives execution permission to the script.sh file only to the owner user.
+touch secreto.txt #create an empty file called
