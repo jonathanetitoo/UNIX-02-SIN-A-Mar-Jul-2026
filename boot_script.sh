@@ -28,3 +28,4 @@ touch secreto.txt #create an empty file called
 chmod o-r secreto.txt #Remove read permission for the secret.txt file from “other” users.
 chmod u+rw,go-rwx privado #It gives the owner user read and write permissions on private files and removes all permissions for groups and others.
 sudo echo "hola" > /etc/archivo_protegido #It attempts to write "hello" to a protected file, but fails because the redirection is not executed with root privileges.
+echo "hola" | sudo tee /etc/archivo_protegido > /dev/null #Write “hello” in /etc/protected_file with root privileges and prevent it from being displayed on the screen.
