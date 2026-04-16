@@ -21,3 +21,4 @@ git man-clone #Create a shallow clone with a history truncated to the specified 
 #n (minúscula) → busca la siguiente coincidencia de una palabra que hayas buscado.
 
 #N (mayúscula) → busca la coincidencia anterior de esa misma palabra.
+touch script.sh #Crear nuevo directorio
