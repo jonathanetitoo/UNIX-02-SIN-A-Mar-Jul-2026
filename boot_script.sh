@@ -22,3 +22,4 @@ git man-clone #Create a shallow clone with a history truncated to the specified 
 
 #N (mayúscula) → busca la coincidencia anterior de esa misma palabra.
 touch script.sh #Crear nuevo directorio
+chmod +x script.sh #Gives execution permission to the script.sh file for all users.
