@@ -31,3 +31,4 @@ sudo echo "hola" > /etc/archivo_protegido #It attempts to write "hello" to a pro
 echo "hola" | sudo tee /etc/archivo_protegido > /dev/null #Write “hello” in /etc/protected_file with root privileges and prevent it from being displayed on the screen.
 ls /etc  #It displays all files and subdirectories within /etc, such as network configurations, services, passwords, users, etc.
 cat /etc/archivo_protegido #Prints to screen what is written inside /etc/protected_file.
+echo "hola" | sudo tee /etc/archivo_protegido #It displays on the screen what it writes to the file (you will see "hello" in the terminal).
