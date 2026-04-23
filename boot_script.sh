@@ -38,3 +38,4 @@ tee # It is used to duplicate the output of a command, sending it to a file and 
 confirmar #Esto solo lo hago para confirmar que estoy guardando correctamente
 
 sudo sh -c 'echo "chao" >> /etc/archivo_protegido' # Add the word "chao" to the end of a protected system file using administrator privileges
+cat /etc/archivo_protegido # Display the contents of the protected file directly on your screen.
