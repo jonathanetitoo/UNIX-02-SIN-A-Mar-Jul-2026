@@ -48,3 +48,4 @@ echo 'echo "Hola desde mi primer script!"' >> hola.sh #Adds a line of code to th
 cat hola.sh #It displays the file contents to verify that it was written correctly.
 ./hola.sh #Try running the script,You will receive a "Permission denied" error. To make it work, run the following command.
 chmod +x hola.sh #Now run the command ./hola.sh again,and you will see that it will run.
+ls -l hola.sh #The -l (long) parameter is used to view the file's details. You'll see something like -rw-r--r--. The missing letter x confirms that it doesn't have execute permission.
