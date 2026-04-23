@@ -57,3 +57,4 @@ touch /etc/prueba.txt #In this case, it is necessary. You are trying to create a
 mkdir ~/mi_carpeta #This doesn't require sudo. The tilde (~) symbol represents your home directory. You have full control over it, so you don't need any special permissions.
 apt install cowsay #This command does need to be run with sudo. Installing software modifies the operating system's binary files and libraries. It's a global change that requires administrator privileges.
 touch prueba.txt #Crea un archivo vacío llamado prueba.txt.
+ls -l # to see what permissions it has
