@@ -40,3 +40,4 @@ confirmar #Esto solo lo hago para confirmar que estoy guardando correctamente
 sudo sh -c 'echo "chao" >> /etc/archivo_protegido' # Add the word "chao" to the end of a protected system file using administrator privileges
 cat /etc/archivo_protegido # Display the contents of the protected file directly on your screen.
 sudo -i # Open an interactive session as superuser (root), turning your terminal into a full administrator console.
+exit # Close the current terminal session or exit administrator mode to return to your normal user account.
