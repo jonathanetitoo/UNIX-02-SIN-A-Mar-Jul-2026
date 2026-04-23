@@ -60,3 +60,4 @@ touch prueba.txt #Crea un archivo vacío llamado prueba.txt.
 ls -l # to see what permissions it has
 chmod 600 prueba.txt #Cambia los permisos del archivo a un modo muy restrictivo.
 ls -l # List the detailed information of the file.
+chmod 755 prueba.txt #Change the permissions so that the file is public and executable.
