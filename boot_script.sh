@@ -52,3 +52,4 @@ ls -l hola.sh #The -l (long) parameter is used to view the file's details. You'l
 chmod +x hola.sh #You add (+) the execution permission (x) to the file.
 ls -l hola.sh #the different response will be noticeable.
 ./hola.sh #Now the script will run and display the message on the screen.
+ls /etc #sudo is not required. Generally, any user can read and see what files are in the system configuration folders.
