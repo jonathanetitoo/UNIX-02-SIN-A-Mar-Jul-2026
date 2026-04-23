@@ -42,3 +42,4 @@ cat /etc/archivo_protegido # Display the contents of the protected file directly
 sudo -i # Open an interactive session as superuser (root), turning your terminal into a full administrator console.
 exit # Close the current terminal session or exit administrator mode to return to your normal user account.
 echo "$HOME" #EXPAND THE VARIABLE
+echo `$HOME` #PRINT THE VARIABLE
