@@ -58,3 +58,4 @@ mkdir ~/mi_carpeta #This doesn't require sudo. The tilde (~) symbol represents y
 apt install cowsay #This command does need to be run with sudo. Installing software modifies the operating system's binary files and libraries. It's a global change that requires administrator privileges.
 touch prueba.txt #Crea un archivo vacío llamado prueba.txt.
 ls -l # to see what permissions it has
+chmod 600 prueba.txt #ambia los permisos del archivo a un modo muy restrictivo.
