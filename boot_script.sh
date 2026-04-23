@@ -43,3 +43,4 @@ sudo -i # Open an interactive session as superuser (root), turning your terminal
 exit # Close the current terminal session or exit administrator mode to return to your normal user account.
 echo "$HOME" #EXPAND THE VARIABLE
 echo `$HOME` #PRINT THE VARIABLE
+echo '#!/bin/sh' > hola.sh #Create a file called hola.sh and write the first line called shebang which tells the system to use the sh command interpreter.
