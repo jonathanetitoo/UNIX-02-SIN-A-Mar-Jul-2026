@@ -55,3 +55,4 @@ ls -l hola.sh #the different response will be noticeable.
 ls /etc #sudo is not required. Generally, any user can read and see what files are in the system configuration folders.
 touch /etc/prueba.txt #In this case, it is necessary. You are trying to create a file in a system folder (/etc). Only the superuser (root) has write permission there.
 mkdir ~/mi_carpeta #This doesn't require sudo. The tilde (~) symbol represents your home directory. You have full control over it, so you don't need any special permissions.
+apt install cowsay #This command does need to be run with sudo. Installing software modifies the operating system's binary files and libraries. It's a global change that requires administrator privileges.
