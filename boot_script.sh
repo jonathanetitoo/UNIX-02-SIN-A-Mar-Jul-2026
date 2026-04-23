@@ -36,3 +36,5 @@ echo "hola" | sudo tee /etc/archivo_protegido #It displays on the screen what it
 tee # It is used to duplicate the output of a command, sending it to a file and to the screen at the same time.
 
 confirmar #Esto solo lo hago para confirmar que estoy guardando correctamente
+
+sudo sh -c 'echo "chao" >> /etc/archivo_protegido' # Add the word "chao" to the end of a protected system file using administrator privileges
