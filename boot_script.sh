@@ -50,3 +50,4 @@ cat hola.sh #It displays the file contents to verify that it was written correct
 chmod +x hola.sh #Now run the command ./hola.sh again,and you will see that it will run.
 ls -l hola.sh #The -l (long) parameter is used to view the file's details. You'll see something like -rw-r--r--. The missing letter x confirms that it doesn't have execute permission.
 chmod +x hola.sh #You add (+) the execution permission (x) to the file.
+ls -l hola.sh #the different response will be noticeable.
