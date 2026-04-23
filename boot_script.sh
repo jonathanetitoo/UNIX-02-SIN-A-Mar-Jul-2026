@@ -53,3 +53,4 @@ chmod +x hola.sh #You add (+) the execution permission (x) to the file.
 ls -l hola.sh #the different response will be noticeable.
 ./hola.sh #Now the script will run and display the message on the screen.
 ls /etc #sudo is not required. Generally, any user can read and see what files are in the system configuration folders.
+touch /etc/prueba.txt #In this case, it is necessary. You are trying to create a file in a system folder (/etc). Only the superuser (root) has write permission there.
