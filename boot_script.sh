@@ -46,3 +46,4 @@ echo `$HOME` #PRINT THE VARIABLE
 echo '#!/bin/sh' > hola.sh #Create a file called hola.sh and write the first line called shebang which tells the system to use the sh command interpreter.
 echo 'echo "Hola desde mi primer script!"' >> hola.sh #Adds a line of code to the existing file that will print the message on the screen
 cat hola.sh #It displays the file contents to verify that it was written correctly.
+./hola.sh #Try running the script,You will receive a "Permission denied" error. To make it work, run the following command.
