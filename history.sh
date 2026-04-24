@@ -35,3 +35,44 @@
    35  git add .
    36  git commit -m "Fix problema 4: permisos simbolicos corregidos"
    37  history
+   37  chmod 640 kepler/registros/sensores.log
+38  git add .
+39  git commit -m 
+40  touch kepler/runner.sh
+41  chmod u+x kepler/runner.sh
+42  chmod o-w kepler/ajustes.conf
+43  git add .
+44  git commit -m 
+45  chmod u+s kepler/runner.sh
+46  mkdir -p /tmp/kepler_zone
+47  chmod 1777 /tmp/kepler_zone
+48  ls -l kepler/runner.sh
+49  ls -ld /tmp/kepler_zone
+50  gpg --batch --generate-key /tmp/mi_llave.batch
+   51  gpg --encrypt --recipient vega@kepler.lab kepler/registros/sensores.log
+   52  git add .
+   53  git commit -m "Fix problema 7: llave GPG generada y sensores.log cifrado"
+   54  # 8a. Crear firma clearsign
+   55  gpg --output kepler/ajustes.conf.asc --clearsign kepler/ajustes.conf
+   56  # 8b. Re-firmar el runner sobrescribiendo la corrupta
+   57  gpg --yes --output kepler/runner.sh.sig --detach-sign kepler/runner.sh
+   58  git add .
+   59  git commit -m "Fix problema 8: firmas GPG corregidas y creadas"
+   60  chmod 1777 /tmp/kepler_zone
+   61  ./calificar.sh kepler
+   62  ../calificar.sh kepler
+   63  cd ..
+   64  ls
+   65  ./nombre_del_script.sh kepler
+   66  find /workspaces -name "calificar.sh"
+   67  ./filesystem_script.sh evaluation/kepler
+   68  ./filesystem_script.sh kepler
+   69  chmod +x filesystem_script.sh gnupg_script.sh
+   70  ./filesystem_script.sh evaluation/kepler
+   71  ./gnupg_script.sh evaluation/kepler
+   72  cd evaluation
+   73  ../filesystem_script.sh kepler
+   74  ../gnupg_script.sh kepler
+   75  ls -lR kepler && ls -ld /tmp/kepler_zone
+   76  git push origin eval_p2_1_g2
+   77  history
