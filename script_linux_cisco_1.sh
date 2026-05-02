@@ -14,3 +14,7 @@ ls -rl
 apt -vv moo
 #Shows the current directory you are in, giving the full path of your location in the system.
 pwd
+#Creates a new folder called “Documents” in the current directory where you are working.
+mkdir Documents
+#Changes the current directory to the “Documents” folder, so you start working inside it.
+cd Documents 
