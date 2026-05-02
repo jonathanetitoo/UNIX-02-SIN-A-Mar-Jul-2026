@@ -6,3 +6,7 @@ apt moo
 ls -l
 #Lists files and folders in reverse order, showing the last items first instead of the normal order.
 ls -r
+#Lists all files and folders with detailed information and shows them in reverse order, from last to first.
+ls  -l -r
+#Does the same as ls -l -r, combining both options to show detailed information in reverse order.
+ls -rl
