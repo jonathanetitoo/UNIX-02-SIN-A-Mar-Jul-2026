@@ -24,3 +24,6 @@ cd /
 cd ..
 #Moves to the home directory, which is your personal main folder.
 cd ~
+#Lists all files and folders inside the /var/log/ directory, which usually contains system log files.
+ls /var/log/
+#
