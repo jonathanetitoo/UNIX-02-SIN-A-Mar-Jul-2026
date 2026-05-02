@@ -20,3 +20,7 @@ mkdir Documents
 cd Documents 
 #Changes the current directory to the root directory, which is the main top-level folder of the system.
 cd /
+#Moves to the parent directory, going one level up from the current folder.
+cd ..
+#Moves to the home directory, which is your personal main folder.
+cd ~
