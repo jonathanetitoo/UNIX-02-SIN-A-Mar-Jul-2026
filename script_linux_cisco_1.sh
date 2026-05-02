@@ -30,4 +30,5 @@ ls /var/log/
 ls -lt /var/log
 #Shows files in /var/log with full details, ordering them from the biggest file to the smallest one.
 ls -l -S /var/log 
-#
+#Shows files in /var/log with full details, sorted by size from smallest to largest, and in reverse order.
+ls -lSr /var/log
