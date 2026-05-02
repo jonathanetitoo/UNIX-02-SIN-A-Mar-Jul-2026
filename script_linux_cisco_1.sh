@@ -10,3 +10,7 @@ ls -r
 ls  -l -r
 #Does the same as ls -l -r, combining both options to show detailed information in reverse order.
 ls -rl
+#Tries to show the funny cow message, but in some systems it only prints the version of APT with more detailed information instead of the joke.
+apt -vv moo
+#Shows the current directory you are in, giving the full path of your location in the system.
+pwd
