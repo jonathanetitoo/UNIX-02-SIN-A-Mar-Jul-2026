@@ -28,4 +28,6 @@ cd ~
 ls /var/log/
 #Lists all files in /var/log with detailed information, sorted by modification time.
 ls -lt /var/log
+#Shows files in /var/log with full details, ordering them from the biggest file to the smallest one.
+ls -l -S /var/log 
 #
