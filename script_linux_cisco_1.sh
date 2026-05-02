@@ -26,4 +26,6 @@ cd ..
 cd ~
 #Lists all files and folders inside the /var/log/ directory, which usually contains system log files.
 ls /var/log/
+#Lists all files in /var/log with detailed information, sorted by modification time.
+ls -lt /var/log
 #
