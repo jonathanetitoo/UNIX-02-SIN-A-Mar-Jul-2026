@@ -18,3 +18,5 @@ pwd
 mkdir Documents
 #Changes the current directory to the “Documents” folder, so you start working inside it.
 cd Documents 
+#Changes the current directory to the root directory, which is the main top-level folder of the system.
+cd /
