@@ -48,4 +48,8 @@ su -
 su -l
 #Does the same as su -l, starting a login session for the user.
 su --login
+#Shows detailed information about the file “hello.sh”, like permissions, size, and date.
+ls -l hello.sh
+#Gives execute permission to the user (owner) of the file “hello.sh”, so it can be run as a program.
+chmod u+x hello.sh
 #
