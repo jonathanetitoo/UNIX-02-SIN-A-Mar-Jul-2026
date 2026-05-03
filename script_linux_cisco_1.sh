@@ -32,3 +32,20 @@ ls -lt /var/log
 ls -l -S /var/log 
 #Shows files in /var/log with full details, sorted by size from smallest to largest, and in reverse order.
 ls -lSr /var/log
+#Lists the files and folders in /var/log in reverse order, showing the last items first.
+ls -r /var/log 
+#Switches to the root user and loads the root user’s environment.
+sudo su-
+#Updates the list of available packages from the repositories.
+sudo apt update
+#Installs the program “aptitude” automatically without asking for confirmation.
+sudo apt install aptitude -y
+#Shows the current user, usually “root” when using sudo.
+sudo whoami
+#Changes to the root user and loads the root environment.
+su -
+#Changes to another user (default root) and starts a full login session.
+su -l
+#Does the same as su -l, starting a login session for the user.
+su --login
+#
