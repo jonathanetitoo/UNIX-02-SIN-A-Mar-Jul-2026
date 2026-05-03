@@ -52,4 +52,13 @@ su --login
 ls -l hello.sh
 #Gives execute permission to the user (owner) of the file “hello.sh”, so it can be run as a program.
 chmod u+x hello.sh
-#
+#Creates a new empty file called “animals.txt”.
+touch animals.txt
+#Writes “1 retriever” into the file, replacing any previous content.
+echo "1 retriever" > animals.txt
+echo "2 badger" >> animals.txt #Adds “2 badger” at the end of the file without deleting existing content.
+echo "3 bat" >> animals.txt #Adds “3 bat” to the file.
+echo "4 wolf" >> animals.txt #Adds “4 wolf” to the file.
+echo "5 eagle" >> animals.txt #Adds “5 eagle” to the file.
+#Displays the content of the file “animals.txt” in the terminal.
+cat animals.txt         
