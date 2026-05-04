@@ -103,4 +103,7 @@ head -n 5 alpha.txt
 tail -n 5 alpha.txt
 #Copies the file “/etc/passwd” into the current directory you are working in.
 cp /etc/passwd .
-
+#Changes the current directory to your home folder, where your personal files are stored.
+cd ~
+#Creates a 50 MB file filled with zeros in /tmp using blocks of 1 MB.
+ dd if=/dev/zero of=/tmp/swapex bs=1M count=50 
