@@ -62,3 +62,42 @@ echo "4 wolf" >> animals.txt #Adds “4 wolf” to the file.
 echo "5 eagle" >> animals.txt #Adds “5 eagle” to the file.
 #Displays the content of the file “animals.txt” in the terminal.
 cat animals.txt         
+#Creates a new empty file called “alpha.txt”.
+touch alpha.txt
+#Add each new line without deleting the existing content.
+echo "A is for Apple" > alpha.txt
+echo "B is for Bear" >> alpha.txt
+echo "C is for Cat" >> alpha.txt
+echo "D is for Dog" >> alpha.txt
+echo "E is for Elephant" >> alpha.txt
+echo "F is for Flower" >> alpha.txt
+echo "G is for Grapes" >> alpha.txt
+echo "H is for Happy" >> alpha.txt
+echo "I is for Ink" >> alpha.txt
+echo "J is for Juice" >> alpha.txt
+echo "K is for Kangaroo" >> alpha.txt
+echo "L is for Lol" >> alpha.txt
+echo "M is for Monkey" >> alpha.txt
+echo "N is for Nickel" >> alpha.txt
+echo "O is for Oval" >> alpha.txt
+echo "P is for Pickle" >> alpha.txt
+echo "Q is for Quark" >> alpha.txt
+echo "R is for Rat" >> alpha.txt
+echo "S is for Sloth" >> alpha.txt
+echo "T is for Turnip" >> alpha.txt
+echo "U is for Up" >> alpha.txt
+echo "V is for Velvet" >> alpha.txt
+echo "W is for Walrus" >> alpha.txt
+echo "X is for Xenon" >> alpha.txt
+echo "Y is for Yellow" >> alpha.txt
+echo "Z is for Zebra" >> alpha.txt
+#Shows all the content of the file in the terminal
+cat alpha.txt 
+#Shows the first 10 lines of the file.
+head alpha.txt
+#Shows the last 10 lines of the file.
+tail alpha.txt  
+#Shows the first 5 lines of the file.
+head -n 5 alpha.txt 
+#Shows the last 5 lines of the file.
+tail -n 5 alpha.txt
