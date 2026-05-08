@@ -236,5 +236,7 @@ EOF
 CMD ["/bin/zsh"]
 
 
-
+# Configuración permanente de ZSH en el Dockerfile
+RUN echo 'visto_o_x() { echo "%(?..%F{red}✘%f )%(?.%F{green}✔%f )"; }' >> /root/.zshrc && \
+    echo "PROMPT='\$(visto_o_x)%F{cyan}%n%f@%F{yellow}%m%f:%F{blue}%~%f$ '" >> /root/.zshrc
 
