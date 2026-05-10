@@ -82,14 +82,21 @@ RUN git config --system --add safe.directory '*' \
  && git lfs install --system
 
 # ----------------------------------------------------------------------------
-# CONFIGURACIÓN DEL PROMPT ANALISTA
+# CMD: comando que se ejecuta por defecto al arrancar el contenedor
 # ----------------------------------------------------------------------------
-# 1. Aseguramos que el shell por defecto sea Zsh para root
-RUN chsh -s /bin/zsh root
+# Lanza una shell bash interactiva. Codespaces la sobrescribe con su
+# propia terminal integrada de VS Code, pero es buena práctica dejarla
+# definida para que la imagen sea usable también con Docker puro.
 
-# 2. Escribimos la configuración limpia en el .zshrc
-RUN echo 'function get_exit_status() { [ $? -eq 0 ] && echo "%F{green}✓%f" || echo "%F{red}✗%f"; }' > /root/.zshrc && \
-    echo 'setopt PROMPT_SUBST' >> /root/.zshrc && \
-    echo 'PROMPT="%F{cyan}[Analista-kevin-almache]%f %F{yellow}%1~%f \$(get_exit_status) %# "' >> /root/.zshrc
-# Comando por defecto
-CMD ["/bin/zsh"]
+# Cambiar shell de login de root a zsh dentro de la imagen,
+# para que chsh ya no haga falta y todo sea consistente.
+RUN chsh -s /usr/bin/zsh root
+
+# Prompt institucional para los y las estudiantes del curso
+RUN cat >> /root/.zshrc <<'EOF'
+
+# ===== Valida si un comando fue ejecutado correctamente =====
+PROMPT='%F{cyan}[Analista-kevin-almache]%f %F{yellow}%1~%f %(?.%F{green}✓.%F{red}✗ %?)%f %# '
+EOF
+
+CMD ["/usr/bin/zsh"]
