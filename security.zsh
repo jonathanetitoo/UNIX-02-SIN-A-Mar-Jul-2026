@@ -20,3 +20,6 @@ groups root                # List the groups assigned to the "root" user
 cat /etc/group             # Display all existing groups in the system
 touch comun                # Create an empty file named "comun"
 ls -l comun                # View the detailed permissions and ownership of "comun"
+usermod -a -G grupo_test david   # Add user "david" to "grupo_test" without removing other groups
+chgrp grupo_test comun           # Change the group ownership of the file "comun" to "grupo_test"
+ls -l comun                      # Verify the new group ownership and permissions for "comun"
