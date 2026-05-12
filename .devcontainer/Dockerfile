@@ -233,31 +233,22 @@ __set_prompt() {
 }
 PROMPT_COMMAND=__set_prompt
 EOF
-CMD ["/bin/bash"]
+# -------------------------------------------------------------------------
+# CMD: comando que se ejecuta por defecto al arrancar el contenedor
+# -------------------------------------------------------------------------
+# Lanza una shell bash interactiva. Codespaces la sobrescribe con su 
+# propia terminal integrada de VS Code, pero es buena práctica dejarla 
+# definida para que la imagen sea usable también con Docker puro.
 
-# Instalar zsh y nano
-RUN apt-get update && apt-get install -y \
-    zsh \
-    nano
-
-# Crear configuración zsh personalizada
-RUN echo '\
-set_prompt() {\n\
-    local ec=$?\n\
-\n\
-    if [[ $ec -eq 0 ]]; then\n\
-        symbol="%F{green}✔%f"\n\
-    else\n\
-        symbol="%F{red}✘%f"\n\
-    fi\n\
-\n\
-    PROMPT=$'\''%F{blue}┌──(%F{cyan}root%F{magenta}㉿%F{green}David-Vaca%F{blue})-[%F{yellow}%~%F{blue}]\\n└─'\''"$symbol "'\''%# %f'\''\n\
-}\n\
-\n\
-precmd_functions+=(set_prompt)\n\
-' > /root/.zshrc
-
-# Cambiar shell por defecto
+# Cambiar shell de login de root a zsh dentro de la imagen,
+# para que chsh ya no haga falta y todo sea consistente.
 RUN chsh -s /usr/bin/zsh root
 
+# Prompt institucional para los y las estudiantes del curso
+RUN cat >> /root/.zshrc <<'EOF'
 
+# ===== Valida si un comando fue ejecutado correctamente =====
+PROMPT='%F{cyan}[David-Vaca]%f %F{yellow}%1~%f %(?.%F{green}✔.%F{red}✘ %?)%f %# '
+EOF
+
+CMD ["/usr/bin/zsh"]
