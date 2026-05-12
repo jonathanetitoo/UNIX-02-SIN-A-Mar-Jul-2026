@@ -23,3 +23,9 @@ ls -l comun                # View the detailed permissions and ownership of "com
 usermod -a -G grupo_test david   # Add user "david" to "grupo_test" without removing other groups
 chgrp grupo_test comun           # Change the group ownership of the file "comun" to "grupo_test"
 ls -l comun                      # Verify the new group ownership and permissions for "comun"
+chown david:grupo_test mi_archivo # Change both owner to "david" and group to "grupo_test"
+ls -l mi_archivo                  # Verify the updated owner and group permissions
+mkdir -p proyecto/sub             # Create a directory and its subdirectory at once
+touch proyecto/readme proyecto/sub/datos  # Create files in both the main and subdirectory
+chown -R david:grupo_test proyecto # Recursively change owner and group for the entire folder
+ls -lR proyecto                   # List all files and subdirectories recursively with details
