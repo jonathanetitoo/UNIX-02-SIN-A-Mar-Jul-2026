@@ -60,3 +60,7 @@ usermod -a -G grupo_test luna
 chgrp grupo_test comun
 #Displays the permissions, owner, and group of the file comun
 ls -l comun
+# Change both the owner and group of the file at the same time
+sudo chown luna:grupo_test mi_archivo
+# Verify the file owner, group, and permissions
+ls -l mi_archivo
