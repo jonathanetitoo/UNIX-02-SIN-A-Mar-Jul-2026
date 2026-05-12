@@ -34,13 +34,29 @@ mkdir privado
 ls -l
 #Sets the permission mask allowing read access for everyone and write access only for the owner
 umask 022
-#
+#Displays the current system user
 whoami
-#
+#Creates a file named mi_archivo with the text "Hola"
 echo "Hola" > mi_archivo
-#
+#Displays the file permissions, owner, and group
 ls -l mi_archivo
-#
+#Creates a new user named luna with zsh shell
 useradd -m -s /usr/bin/zsh luna
-#
+#Attempts to change the file owner to luna
 chown luna mi_archivo
+# Display the groups the current user belongs to
+groups
+# Create a new group named grupo_test
+groupadd grupo_test
+# Display groups again to verify 
+groups
+# Create a new empty test file
+touch comun
+# Check the initial owner and group of the new file
+ls -l comun
+#Adds the user luna to the grupo_test group
+usermod -a -G grupo_test luna
+#Changes the group owner of the file comun to grupo_test
+chgrp grupo_test comun
+#Displays the permissions, owner, and group of the file comun
+ls -l comun
