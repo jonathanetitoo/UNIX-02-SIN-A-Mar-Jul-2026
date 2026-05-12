@@ -24,3 +24,13 @@ setfacl -bnR .
 umask 027
 #Creates an empty file named archivo
 touch archivo2
+#Sets the permission mask for owner-only access
+umask 077
+#Creates an empty file named secreto.txt
+touch secreto.txt
+#Creates a directory named privado
+mkdir privado
+#Displays files and permissions in detailed format
+ls -l
+#Sets the permission mask allowing read access for everyone and write access only for the owner
+umask 022
