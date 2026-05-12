@@ -34,3 +34,13 @@ mkdir privado
 ls -l
 #Sets the permission mask allowing read access for everyone and write access only for the owner
 umask 022
+#
+whoami
+#
+echo "Hola" > mi_archivo
+#
+ls -l mi_archivo
+#
+useradd -m -s /usr/bin/zsh luna
+#
+chown luna mi_archivo
