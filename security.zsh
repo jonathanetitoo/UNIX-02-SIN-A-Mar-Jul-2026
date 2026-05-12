@@ -13,3 +13,10 @@ echo "Hola" > mi_archivo   # Create "mi_archivo" with the text "Hola"
 ls -l mi_archivo           # List details and permissions of "mi_archivo"
 useradd -m -s /usr/bin/zsh david  # Create user "david" with home dir and ZSH shell
 chown david mi_archivo     # Change the owner of "mi_archivo" to user "david"
+groups                     # Show the groups the current user belongs to
+groupadd grupo_test        # Create a new system group named "grupo_test"
+groups                     # Verify current groups again after changes
+groups root                # List the groups assigned to the "root" user
+cat /etc/group             # Display all existing groups in the system
+touch comun                # Create an empty file named "comun"
+ls -l comun                # View the detailed permissions and ownership of "comun"
