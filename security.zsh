@@ -64,3 +64,11 @@ ls -l comun
 sudo chown luna:grupo_test mi_archivo
 # Verify the file owner, group, and permissions
 ls -l mi_archivo
+# Create the proyecto directory and its subdirectory sub
+mkdir -p proyecto/sub
+# Create the files readme and datos inside the project structure
+touch proyecto/readme proyecto/sub/datos
+# Change the owner and group recursively for the entire proyecto directory
+chown -R luna:grupo_test proyecto
+# Display the full recursive listing of the proyecto directory
+ls -lR proyecto
