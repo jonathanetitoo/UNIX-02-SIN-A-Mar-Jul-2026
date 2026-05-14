@@ -97,3 +97,5 @@ id -g
 #Group Id principal
 id -G
 #todos los Group IDs
+cat /etc/group | grep root
+# Search for the 'root' group entry within the system's group definition file
