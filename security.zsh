@@ -29,3 +29,8 @@ mkdir -p proyecto/sub             # Create a directory and its subdirectory at o
 touch proyecto/readme proyecto/sub/datos  # Create files in both the main and subdirectory
 chown -R david:grupo_test proyecto # Recursively change owner and group for the entire folder
 ls -lR proyecto                   # List all files and subdirectories recursively with details
+id                                # user ID numeric, primary group, secondary group
+cat /etc/passwd | head -10        # look all the system users
+id -u                             # User ID
+id -g                             # Primary ID group
+id -G                             # All the groups id
