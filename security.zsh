@@ -89,3 +89,9 @@ cat /etc/group | grep root
 mkdir ~/proyecto_unix/ 
 # Displays all files and details inside the "proyecto_unix" folder
 ls -la ~/proyecto_unix/
+# Searches for the groups "desarrolladores", "operaciones", and "servicios_web" in the /etc/group file
+grep "desarrolladores\|operaciones\|servicios_web" /etc/group
+# Searches for the same groups using extended regular expressions
+grep  -E "desarrolladores|operaciones|servicios_web" /etc/group
+# Add GID configuration search command
+grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs
