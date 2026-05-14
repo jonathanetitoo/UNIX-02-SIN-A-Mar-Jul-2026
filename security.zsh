@@ -72,3 +72,8 @@ touch proyecto/readme proyecto/sub/datos
 chown -R luna:grupo_test proyecto
 # Display the full recursive listing of the proyecto directory
 ls -lR proyecto
+# User numeric ID, primary group, secondary groups
+id
+# Shows the first 10 registered users of the system.
+cat /etc/passwd | head -10
+#
