@@ -83,3 +83,9 @@ id -u
 id -g
 # All groups id
 id -G
+# Displays lines containing the word "root" from the /etc/grouo file.
+cat /etc/group | grep root
+# Creates a new folder called "proyecto_unix" in the home directory
+mkdir ~/proyecto_unix/ 
+# Displays all files and details inside the "proyecto_unix" folder
+ls -la ~/proyecto_unix/
