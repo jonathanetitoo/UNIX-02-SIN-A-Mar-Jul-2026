@@ -76,4 +76,10 @@ ls -lR proyecto
 id
 # Shows the first 10 registered users of the system.
 cat /etc/passwd | head -10
-#
+# View the UID and GID of the current user
+# User ID
+id -u
+# Principal Group ID 
+id -g
+# All groups id
+id -G
