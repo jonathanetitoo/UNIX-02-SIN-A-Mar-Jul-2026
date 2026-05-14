@@ -99,3 +99,9 @@ id -G
 #todos los Group IDs
 cat /etc/group | grep root
 # Search for the 'root' group entry within the system's group definition file
+cat /etc/group | grep root
+# Search for the 'root' group entry within the system's group definition file
+grep -E "developers|operations|web_services" /etc/group
+# Search for multiple group names simultaneously using an extended regular expression
+grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs
+# Search for the ID range limits for users and system groups in the login configuration file
