@@ -39,3 +39,7 @@ groupadd desarrolladores          # Create a simple group
 groupadd -g 2000 operaciones      # Create a simple group
 groupadd --system servicios_web   # System group 
 grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs # See the range of GIDs on the system
+addgroup diseno                   # Create groups
+addgroup --gid 2100 marketing     # Create groups
+addgroup --system cache_web       # Create groups
+grep "diseno\|marketing\|cache_web" /etc/group # Verify
