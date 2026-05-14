@@ -95,3 +95,12 @@ grep "desarrolladores\|operaciones\|servicios_web" /etc/group
 grep  -E "desarrolladores|operaciones|servicios_web" /etc/group
 # Add GID configuration search command
 grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs
+# Creates a new regular group called "diseño"
+addgroup diseño
+# Creates a new group called "marketing" with the custom GID 2100
+addgroup --gid 2100 marketing
+# Creates a system group called "cache_web"
+addgroup --system cache_web
+# Searches for the groups "diseno", "marketing", and "cache_web" in the /etc/group file
+grep "diseno\|marketing\|cache_web" /etc/group
+
