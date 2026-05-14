@@ -103,4 +103,17 @@ addgroup --gid 2100 marketing
 addgroup --system cache_web
 # Searches for the groups "diseno", "marketing", and "cache_web" in the /etc/group file
 grep "diseno\|marketing\|cache_web" /etc/group
-
+# Displays the groups of the current user
+groups
+# Shows user ID, primary group, and secondary groups
+id
+# Adds the user "root" to the "desarrolladores" group
+usermod -aG desarrolladores root
+# Adds the user "root" to the "diseño" group
+usermod -aG diseño root
+# Creates a new group called "grupo_temporal"
+groupadd grupo_temporal
+# Adds the user "root" to the "grupo_temporal" group
+usermod -aG grupo_temporal root
+# Displays detailed information and groups for the user "root"
+id root
